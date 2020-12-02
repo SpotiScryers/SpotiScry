@@ -1,0 +1,10 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__
+
+# don't push your confedential usernames or passwords stored in the env file
+env.py
+
+# don't push any confedential data on accident
+# this would be for any csv or excel file
+*.csv
