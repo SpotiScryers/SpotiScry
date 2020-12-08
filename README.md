@@ -1,4 +1,4 @@
-# Project Title
+# Spotify Capstone
 ## About the Project
 ### Goals
 ### Background
