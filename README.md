@@ -13,6 +13,16 @@ What is the target variable? Popularity
 - Video presentation
 - Presentation slides
 - GitHub repository with analysis
+
+### Timeline
+- [X] Project Planning: December 8th
+- [ ] Aquisition and Prep: December 10th
+- [ ] Exploration: December 14th
+- [ ] Modeling: December 15th
+- [ ] Finalize Minimum Viable Product (MVP): EOD December 15th
+- [ ] Improve/Iterate MVP: December 16th
+- [ ] Finalize Presentation: December 17th
+
 ### Acknowledgments
 ## Data Dictionary
 ## Initial Thoughts & Hypotheses
