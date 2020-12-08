@@ -23,9 +23,4 @@
 ### Tools & Requirements
 ## License
 ## Creators
-<<<<<<< HEAD
 Brandon Martinez, Bethany Thompson
-=======
-#
-Brandon Martinez
->>>>>>> b989336dc8c072d53bfca92e52c16c57727766c5
