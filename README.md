@@ -9,6 +9,12 @@ What is the target variable? Popularity
 - Create a regression model to predict how popular a song will be
 
 ### Background
+What makes a song popular? According to Splinter News [here](https://splinternews.com/how-does-a-song-become-number-one-1793850261),
+> "making a 'good' number one song is not necessarily the same as making a 'good' song in general. It's not about artistry (though 
+> sometimes artistry does hit number one). It's about popularity. And not long-term popularity. But popularity right here, right now."  
+
+By analyzing Spotify's API data, we will determine ourselves what influences a song's popularity.
+
 ### Deliverables
 - Video presentation
 - Presentation slides
