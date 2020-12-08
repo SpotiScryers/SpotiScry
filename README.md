@@ -7,6 +7,9 @@
 
 ### Background
 ### Deliverables
+- Video presentation
+- Presentation slides
+- GitHub repository with analysis
 ### Acknowledgments
 ## Data Dictionary
 ## Initial Thoughts & Hypotheses
