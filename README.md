@@ -19,4 +19,4 @@
 ### Tools & Requirements
 ## License
 ## Creators
-Brandon Martinez
+Brandon Martinez, Bethany Thompson
