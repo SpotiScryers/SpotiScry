@@ -1,4 +1,5 @@
-# Spotify Capstone
+![Header](https://i.pinimg.com/originals/d2/c6/29/d2c629d9295ff516375ef2ec3ac25bc8.png)
+
 ## About the Project
 What is the target variable? Popularity
 
