@@ -1,5 +1,7 @@
 # Spotify Capstone
 ## About the Project
+What is the target variable? Popularity
+
 ### Goals
 - Build a dataset of songs using Spotify's API
 - Identify the drivers of song popularity
