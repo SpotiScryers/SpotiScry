@@ -8,3 +8,5 @@ env.py
 # don't push any confedential data on accident
 # this would be for any csv or excel file
 *.csv
+
+discord-emojis/
