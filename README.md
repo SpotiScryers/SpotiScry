@@ -6,7 +6,7 @@ What is the target variable? Popularity
 ### Goals
 - Build a dataset of songs using Spotify's API
 - Identify the drivers of song popularity
-- Create a regression model to predict how popular a song will be that has an RMSE lower than the baseline
+- Create a regression model that predicts song popularity with an RMSE lower than the baseline
 
 ### Background
 What makes a song popular? According to Splinter News [here](https://splinternews.com/how-does-a-song-become-number-one-1793850261),
@@ -45,4 +45,4 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 ### Tools & Requirements
 ## License
 ## Creators
-Brandon Martinez, Bethany Thompson, [Kwame V. Taylor](https://github.com/KwameTaylor)
+Brandon Martinez, Bethany Thompson, [Kwame V. Taylor](https://github.com/KwameTaylor), Matthew Mays
