@@ -20,6 +20,7 @@ def analyze_playlist(creator, playlist_id):
         playlist_features["release_date"] = track["track"]["album"]["release_date"]
         playlist_features["track_name"] = track["track"]["name"]
         playlist_features["track_id"] = track["track"]["id"]
+        playlist_features['explicit'] = track['track']['explicit']
         playlist_features["popularity"] = track["track"]["popularity"]
         
         # Get audio features
