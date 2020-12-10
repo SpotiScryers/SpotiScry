@@ -1,3 +1,6 @@
+import pandas as import pd 
+import numpy as np
+
 # Function to acquire playlist tracks and features
 def analyze_playlist(creator, playlist_id):
     
