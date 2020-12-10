@@ -1,5 +1,18 @@
+import pandas as pd
+import spotipy
+
+from spotipy.oauth2 import SpotifyClientCredentials 
+from env import cid, c_secret
+
+# Function to create spotipy client object
+def create_spotipy_client():
+    client_credentials_manager = SpotifyClientCredentials(client_id=cid, 
+    client_secret=c_secret) 
+    sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager) 
+    sp.trace=False
+    return sp
 # Function to acquire playlist tracks and features
-def analyze_playlist(creator, playlist_id):
+def analyze_playlist(creator, playlist_id, sp_client):
     
     # Create empty dataframe
     playlist_features_list = ["artist","album","track_name","track_id","danceability","energy","key",
@@ -10,7 +23,7 @@ def analyze_playlist(creator, playlist_id):
     
     # Loop through every track in the playlist, extract features and append the features to the playlist df
     
-    playlist = sp.user_playlist_tracks(creator, playlist_id)["tracks"]['items']
+    playlist = sp_client.user_playlist_tracks(creator, playlist_id)["tracks"]['items']
     for track in playlist:
         # Create empty dict
         playlist_features = {}
@@ -24,7 +37,7 @@ def analyze_playlist(creator, playlist_id):
         playlist_features["popularity"] = track["track"]["popularity"]
         
         # Get audio features
-        audio_features = sp.audio_features(playlist_features["track_id"])[0]
+        audio_features = sp_client.audio_features(playlist_features["track_id"])[0]
         for feature in playlist_features_list[4:]:
             playlist_features[feature] = audio_features[feature]
         
