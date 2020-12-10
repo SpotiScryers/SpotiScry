@@ -27,6 +27,16 @@ def create_features(df):
     df['album'] = df.album.str.lower()
     df['track_name'] = df.track_name.str.lower()
 
+    # Create Seperate Columns for Year, Month, and Day
+    # creating dataframe of release day split by '-'
+    dates = df.release_date.str.split('-', expand=True)
+    # renaming columns to respective year, month, and day
+    dates.columns = ['release_year','release_month','release_day']
+    # ensuring index is the same as the df
+    dates.index = df.index
+    # adding to the dataframe with axis=1 to add column-wise
+    df = pd.concat([df,dates], axis=1)
+
     return df
 
 ##################################################### Split the Data #####################################################
