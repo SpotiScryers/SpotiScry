@@ -37,7 +37,7 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 - track_id: The spotify ID for the track
 - danceability: A value of 0 - 1 that represents a combination of tempo, rhythm stability, beat strength, and overall regularity
 - energy: A value of 0 - 1 that represents a perceptual measure of intensity and activity. The faster, louder, noisier a track is the higher the energy
-- key: The estimated overall key of the track
+- key: The estimated overall key of the track, integers map to pitches using standard Pitch Class notation. If no key was detected, value is -1.
     - 0 = C
     - 1 = C#
     - 2 = D
