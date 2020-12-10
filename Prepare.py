@@ -2,6 +2,7 @@
 # Functions to prep data acquired from the Spotify API
 
 import pandas as pd
+import numpy as np
 
 ###################################################### Handle Nulls ######################################################
 
