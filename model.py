@@ -32,12 +32,12 @@ def OLS_model(X, y, X_v, y_v):
     # predict on train
     lm_pred = lm.predict(X)
     # compute root mean squared error
-    lm_rmse = mean_squared_error(y, lm_pred)**1/2
+    lm_rmse = sqrt(mean_squared_error(y, lm_pred))
 
     # predict on validate
     lm_pred_v = lm.predict(X_v)
     # compute root mean squared error
-    lm_rmse_v = mean_squared_error(y_v, lm_pred_v)**1/2
+    lm_rmse_v = sqrt(mean_squared_error(y_v, lm_pred_v))
 
     print("RMSE for OLS using Linear Regression\n\nOn train data:\n", round(lm_rmse, 6), '\n\n', 
         "On validate data:\n", round(lm_rmse_v, 6))
