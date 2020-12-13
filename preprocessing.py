@@ -121,6 +121,16 @@ def spotify_split(df, target):
 
     return X_train, y_train, X_validate, y_validate, X_test, y_test, train, validate, test
 
+def encode_features(df):
+    '''
+    This function encodes non-numeric features for use in modeling.
+    Takes in df and returns df.
+    '''
+    # encode 'explicit'
+    df['is_explicit'] = df.explicit.map({True: 1, False: 0})
+    df = df.drop(columns=['explicit'])
+    return df
+
 ##################################################### Scale the Data #####################################################
 
 def scale_data(train, validate, test, predict, scaler):
