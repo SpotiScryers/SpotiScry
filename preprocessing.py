@@ -2,6 +2,7 @@
 # Functions to reproduce the pre-processing of the data
 
 import pandas as pd
+import numpy as np
 from sklearn.model_selection import train_test_split
 
 ################################################## Feature Engineering ###################################################
