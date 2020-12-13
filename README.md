@@ -30,6 +30,8 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 - [ ] Finalize Presentation: December 17th
 
 ### Acknowledgments
+* [Continuous data stratification](https://danilzherebtsov.medium.com/continuous-data-stratification-c121fc91964b) by Danil Zherebtsov
+
 ## Data Dictionary
 | Feature                | Description                                                                                                                                                                                                                                                                                          |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
