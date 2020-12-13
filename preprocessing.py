@@ -88,6 +88,7 @@ def scale_data(train, validate, test, predict, scaler):
     Scales a df based on scaler chosen: 'MinMax', 'Standard', or 'Robust'. 
     Needs three dfs: train, validate, and test. Fits the scaler object to train 
     only, transforms on all 3. Returns the three dfs scaled.
+    'predict' is the target variable name.
     '''
     
     import sklearn.preprocessing
