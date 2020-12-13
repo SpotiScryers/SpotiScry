@@ -107,7 +107,7 @@ def spotify_split(df, target):
     y_test = test[target]
     
     print('Shape of train:', X_train.shape, '| Shape of validate:', X_validate.shape, '| Shape of test:', X_test.shape)
-    print('Percent train:', round(((train.shape[0])/df.count()[0]),2) * 100, '| Percent validate:', round(((validate.shape[0])/df.count()[0]),2) * 100, '| Percent test:', round(((test.shape[0])/df.count()[0]),2) * 100)
+    print('Percent train:', round(((train.shape[0])/df.count()[0]),2) * 100, '       | Percent validate:', round(((validate.shape[0])/df.count()[0]),2) * 100, '      | Percent test:', round(((test.shape[0])/df.count()[0]),2) * 100)
 
     return X_train, y_train, X_validate, y_validate, X_test, y_test, train, validate, test
 
