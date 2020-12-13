@@ -18,3 +18,7 @@ def handle_nulls(df):
     df = df.dropna()
 
     return df
+
+def set_index(df):
+    df = df.set_index('track_id')
+    return df
