@@ -83,8 +83,8 @@ def split_df(df):
 
 def spotify_split(df, target):
     '''
-    This function takes in a dataframe and splits it into
-    test (15%), validate (15%), and train (70%). 
+    This function takes in a dataframe and the string name of the target variable
+    and splits it into test (15%), validate (15%), and train (70%). 
     It also splits test, validate, and train into X and y dataframes.
     Returns X_train, y_train, X_validate, y_validate, X_test, y_test, train, validate, test.
     '''
