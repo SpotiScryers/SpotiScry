@@ -22,3 +22,17 @@ def handle_nulls(df):
 def set_index(df):
     df = df.set_index('track_id')
     return df
+
+def change_dtypes(df):
+    # change explicit column to int
+    df['explicit'] = df.explicit.astype('int')
+    df['is_featured_artist'] = df.is_featured_artist.astype('int')
+    df['disc_number'] = df.disc_number.astype('int')
+    df['mode'] = df['mode'].astype('int')
+    df['key'] = df.key.astype('int')
+    df['duration_seconds'] = df.duration_seconds.astype('int')
+    df['duration_minutes'] = df.duration_minutes.astype('int')
+    df['duration_ms'] = df.duration_ms.astype('int')
+    df['popularity'] = df.popularity.astype('int')
+    df['time_signature'] = df.time_signature.astype('int')
+    return df
