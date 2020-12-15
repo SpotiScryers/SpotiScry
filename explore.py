@@ -11,8 +11,12 @@ import matplotlib as mpl
 import seaborn as sns
 from cycler import cycler
 # default viz size settings
-plt.rc('figure', figsize=(11, 8))
-plt.rc('font', size=15)
+sns.set(rc={'figure.figsize':(12, 9)})
+sns.set_context("talk", rc={"font.size":14,"axes.titlesize":16,"axes.labelsize":12}) 
+plt.rc('figure', figsize=(12, 9))
+plt.rc('font', size=14)
+mpl.rcParams['font.size'] = 14
+mpl.rcParams['figure.figsize'] = 12, 9
 mpl.rcParams['lines.linewidth'] = 2
 mpl.rcParams['lines.linestyle'] = '--'
 mpl.rcParams['axes.prop_cycle'] = cycler(color=['deepskyblue', 'firebrick', 'darkseagreen', 'violet'])
