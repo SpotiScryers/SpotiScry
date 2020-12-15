@@ -284,20 +284,24 @@ def get_labels_features(df):
     worst_five_labels = list(biggest_labels.sort_values(by='mean').head(5).index)
     # Make a pattern by joining every label in our features
     pattern1 = '|'.join(top_ten_labels)
-    pattern2 = '|'.join(top_ten_labels)
-    pattern3 = '|'.join(top_ten_labels)
-    pattern4 = '|'.join(top_ten_labels)
+    pattern2 = '|'.join(top_five_labels)
+    pattern3 = '|'.join(worst_ten_labels)
+    pattern4 = '|'.join(worst_five_labels)
     # Make new column with boolean variable for if the label is contained in the pattern
     df['top_ten_label'] = df.label.str.contains(pattern1)
-    df['top_five_label'] = df.label.str.contains(pattern1)
-    df['worst_ten_label'] = df.label.str.contains(pattern1)
-    df['worst_five_label'] = df.label.str.contains(pattern1)
+    df['top_five_label'] = df.label.str.contains(pattern2)
+    df['worst_ten_label'] = df.label.str.contains(pattern3)
+    df['worst_five_label'] = df.label.str.contains(pattern4)
     # Convert boolean to int
     df['top_ten_label'] = df.top_ten_label.astype('int')
     df['top_five_label'] = df.top_five_label.astype('int')
     df['worst_ten_label'] = df.worst_ten_label.astype('int')
     df['worst_five_label'] = df.worst_five_label.astype('int')
-    
+
+    return df
+
+################################################# Create Dataframe Ready For Modeling #################################################
+
 def modeling_prep():
     
     df = pd.read_csv('full-playlist.csv', index_col=0)
