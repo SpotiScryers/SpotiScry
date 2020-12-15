@@ -272,7 +272,6 @@ def get_top_ten_labels(df):
     df['top_ten_label'] = df.top_ten_label.astype('int')
     return df
 
-<<<<<<< HEAD
 ################################################# Create Record Label Features #################################################
 
 def get_labels_features(df):
@@ -298,7 +297,7 @@ def get_labels_features(df):
     df['top_five_label'] = df.top_five_label.astype('int')
     df['worst_ten_label'] = df.worst_ten_label.astype('int')
     df['worst_five_label'] = df.worst_five_label.astype('int')
-=======
+    
 def modeling_prep():
     
     df = pd.read_csv('full-playlist.csv', index_col=0)
@@ -315,5 +314,4 @@ def modeling_prep():
 
     df = df.drop(columns=['album_popularity','label', 'artist', 
                         'album', 'release_date', 'track_name', 'album_id', 'album_type'])
->>>>>>> c20d0063909abefdebe3ba55aa95792fb1f63eed
     return df
