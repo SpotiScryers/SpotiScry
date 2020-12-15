@@ -21,7 +21,7 @@ def create_spotipy_client():
 def analyze_playlist(creator, playlist_id, sp_client, offset=0):
     
     # Create empty dataframe
-    playlist_features_list = ["artist","album","release_date","track_name","track_id",'album_popularity','label',
+    playlist_features_list = ["artist","album","release_date","track_name","track_id", 'label',
                               "danceability","energy","key","loudness","mode", "speechiness","instrumentalness",
                               "liveness","valence","tempo", "duration_ms","time_signature"]
     
@@ -51,19 +51,19 @@ def analyze_playlist(creator, playlist_id, sp_client, offset=0):
             # Get audio features
             audio_features = sp_client.audio_features(playlist_features["track_id"])
             if audio_features is None:
-                for feature in playlist_features_list[7:]:
+                for feature in playlist_features_list[6:]:
                     playlist_features[feature] = None
             elif audio_features[0] is None:
-                    for feature in playlist_features_list[7:]:
+                    for feature in playlist_features_list[6:]:
                         playlist_features[feature] = None
             else:
-                for feature in playlist_features_list[7:]:
+                for feature in playlist_features_list[6:]:
                     playlist_features[feature] = audio_features[0][feature]
             
             # Get album popularity
             album_features = sp_client.album(playlist_features['album_id'])
             if album_features is None:
-                for feature in playlist_features_list[5:7]:
+                for feature in playlist_features_list[5:6]:
                     playlist_features[feature] = None
             else:
                 playlist_features['album_popularity'] = album_features['popularity']
@@ -103,8 +103,9 @@ def concat_csv_files():
 
 ###################################################### Gather Entire Capstone Playlist ######################################################
 
-    def get_capstone_playlist():
-    # Let this loop run as it gathers the tracks from the playlist
+# sp is the spotipy client you created
+def get_capstone_playlist(sp):
+# Let this loop run as it gathers the tracks from the playlist
     for offset in range(0, 6000, 100):
         # Prints out how many pages in the loop is. Each page is 100 tracks + or - a few if nulls appear
         print(f'Making page with offset = {offset}')
