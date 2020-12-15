@@ -299,19 +299,24 @@ def get_labels_features(df):
     df['worst_five_label'] = df.worst_five_label.astype('int')
     
 def modeling_prep():
-    
+    '''
+    This function prepared the initial data to feed into a model
+    '''
+    # read the data from a csv
     df = pd.read_csv('full-playlist.csv', index_col=0)
     # handle nulls in release data
     df['release_date'] = np.where(df['release_date'].str.len()==4, df.release_date.astype(str) + '-01-01', df['release_date'])
-    # drop observations that contain nulls
+    # drop any other observations that contain nulls
     df = df.dropna()
+    # used the helper function to encode categorical features
     df = encode_features(df)
+    # creates the top_ten_label feature
     df = get_top_ten_labels(df)
-
+    # creates dummy variables for the album type (encode)
     album_dummies = pd.get_dummies(df.album_type, drop_first=True)
     df = pd.concat([df, album_dummies], axis=1)
     df[['compilation', 'single']]= df[['compilation', 'single']].astype('int')
-
+    # drop any columns that won't contribute to modeling
     df = df.drop(columns=['album_popularity','label', 'artist', 
                         'album', 'release_date', 'track_name', 'album_id', 'album_type'])
     return df
