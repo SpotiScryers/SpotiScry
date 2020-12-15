@@ -271,3 +271,21 @@ def get_top_ten_labels(df):
     # Convert boolean to int
     df['top_ten_label'] = df.top_ten_label.astype('int')
     return df
+
+def modeling_prep():
+    
+    df = pd.read_csv('full-playlist.csv', index_col=0)
+    # handle nulls in release data
+    df['release_date'] = np.where(df['release_date'].str.len()==4, df.release_date.astype(str) + '-01-01', df['release_date'])
+    # drop observations that contain nulls
+    df = df.dropna()
+    df = encode_features(df)
+    df = get_top_ten_labels(df)
+
+    album_dummies = pd.get_dummies(df.album_type, drop_first=True)
+    df = pd.concat([df, album_dummies], axis=1)
+    df[['compilation', 'single']]= df[['compilation', 'single']].astype('int')
+
+    df = df.drop(columns=['album_popularity','label', 'artist', 
+                        'album', 'release_date', 'track_name', 'album_id', 'album_type'])
+    return df
