@@ -21,7 +21,7 @@ def create_features(df):
     # converting track length from seconds to minutes as new column
     df['duration_minutes'] = df.duration_seconds / 60
     # creating boolean if track has a featured artist
-    df['is_featured_artist'] = df.track_name.str.contains('feat')
+    df['is_featured_artist'] = df.track_name.str.contains('feat').astype('int')
 
     # Lowercasing String
     # using string function to convert all characters to lowercase
@@ -38,6 +38,13 @@ def create_features(df):
     dates.index = df.index
     # adding to the dataframe with axis=1 to add column-wise
     df = pd.concat([df,dates], axis=1)
+
+    df.release_year = df.release_year.astype('int')
+
+    # bins set edge points for range of label
+    # goes from 1980-1989, 1990-1999, 2000-2009, 2019-2019, 2020-2029
+    df['decade'] = pd.cut(x=df.release_year, bins=[1979,1989,1999,2009,2019,2029], 
+                                                labels=['80s','90s','2000s','2010s','2020s'])
 
     return df
 
