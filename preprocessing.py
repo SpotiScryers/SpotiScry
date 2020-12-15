@@ -271,3 +271,30 @@ def get_top_ten_labels(df):
     # Convert boolean to int
     df['top_ten_label'] = df.top_ten_label.astype('int')
     return df
+
+################################################# Create Record Label Features #################################################
+
+def get_labels_features(df):
+    # Create a dataframe of the mean of popularity and label count grouped by label
+    biggest_labels = df.groupby('label').popularity.agg(['mean', 'count']).sort_values(by=['count', 'mean'], ascending=False).head(20)
+    # Create a list of the top/bottom ten/five labels by popularity
+    top_ten_labels = list(biggest_labels.sort_values(by='mean', ascending=False).head(10).index)
+    top_five_labels = list(biggest_labels.sort_values(by='mean', ascending=False).head(5).index)
+    worst_ten_labels = list(biggest_labels.sort_values(by='mean').head(10).index)
+    worst_five_labels = list(biggest_labels.sort_values(by='mean').head(5).index)
+    # Make a pattern by joining every label in our features
+    pattern1 = '|'.join(top_ten_labels)
+    pattern2 = '|'.join(top_ten_labels)
+    pattern3 = '|'.join(top_ten_labels)
+    pattern4 = '|'.join(top_ten_labels)
+    # Make new column with boolean variable for if the label is contained in the pattern
+    df['top_ten_label'] = df.label.str.contains(pattern1)
+    df['top_five_label'] = df.label.str.contains(pattern1)
+    df['worst_ten_label'] = df.label.str.contains(pattern1)
+    df['worst_five_label'] = df.label.str.contains(pattern1)
+    # Convert boolean to int
+    df['top_ten_label'] = df.top_ten_label.astype('int')
+    df['top_five_label'] = df.top_five_label.astype('int')
+    df['worst_ten_label'] = df.worst_ten_label.astype('int')
+    df['worst_five_label'] = df.worst_five_label.astype('int')
+    return df
