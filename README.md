@@ -69,4 +69,4 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 ### Tools & Requirements
 ## License
 ## Creators
-Brandon Martinez, Bethany Thompson, [Kwame V. Taylor](https://github.com/KwameTaylor)
+Brandon Martinez, Bethany Thompson, [Kwame V. Taylor](https://github.com/KwameTaylor), Matthew Mays
