@@ -306,10 +306,11 @@ def modeling_prep():
     '''
     This function prepares the data for modeling
     '''
-
+    # read the data from a csv into a dataframe
     df = pd.read_csv('data/full-playlist.csv', index_col=0)
     # handle nulls in release data
-    df['release_date'] = np.where(df['release_date'].str.len()==4, df.release_date.astype(str) + '-01-01', df['release_date'])
+    df['release_date'] = np.where(df['release_date'].str.len()==4, 
+                            df.release_date.astype(str) + '-01-01', df['release_date'])
     # drop any other observations that contain nulls
     df = df.dropna()
     # used the helper function to encode categorical features
@@ -322,5 +323,7 @@ def modeling_prep():
     df[['compilation', 'single']]= df[['compilation', 'single']].astype('int')
     # drop any columns that won't contribute to modeling
     df = df.drop(columns=['album_popularity','label', 'artist', 
-                        'album', 'release_date', 'track_name', 'album_id', 'album_type'])
+                        'album', 'release_date', 'track_name', 'album_id', 'album_type',
+                        'release_year', 'release_month', 'release_day', 'duration_minutes', 
+                        'duration_seconds'])
     return df
