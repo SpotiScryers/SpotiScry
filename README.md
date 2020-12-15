@@ -67,8 +67,8 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 
 ### Hypotheses
 
-$H_{0}$: Mean of song popularity of explicit tracks = Mean of song popularity of non-explicit tracks
-$H_{a}$: Mean of song popularity of explicit tracks > Mean of song popularity of non-explicit tracks
+𝐻0: Mean of song popularity of explicit tracks = Mean of song popularity of non-explicit tracks<br>
+𝐻𝑎: Mean of song popularity of explicit tracks > Mean of song popularity of non-explicit tracks
 
 ## Project Steps
 ### Acquire
