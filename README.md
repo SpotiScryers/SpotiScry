@@ -70,6 +70,18 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 𝐻0: Mean of song popularity of explicit tracks = Mean of song popularity of non-explicit tracks<br>
 𝐻𝑎: Mean of song popularity of explicit tracks > Mean of song popularity of non-explicit tracks
 
+𝐻0: Mean of popularity of major key songs =< Mean of popularity of minor key songs<br>
+𝐻𝑎: Mean of popularity of major key songs > Mean of popularity of minor key songs
+
+𝐻0: Mean of popularity of time signature 4 =< Mean of popularity of all songs<br>
+𝐻𝑎: Mean of popularity of time signature 4 > Mean of popularity of all songs
+
+𝐻0: There is no linear relationship between song length and popularity.<br>
+𝐻𝑎: There is a linear relationship between song length and popularity.
+
+𝐻0: There is no linear relationship between liveness and popularity.<br>
+𝐻𝑎: There is a linear relationship between liveness and popularity.
+
 ## Project Steps
 ### Acquire
 Data was acquired from Spotify API using the spotipy library. Going to this website https://developer.spotify.com/dashboard/login lets you create a spotify web app that will give you a client id and client secret. Create an env.py file in your working directory and save this code after swaping out your individual client id and secret:  
