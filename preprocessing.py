@@ -256,3 +256,18 @@ def create_clusters(X_train_scaled, X_validate_scaled, X_test_scaled, features, 
     X_test_scaled = pd.concat([X_test_scaled,dummies3], axis=1)
 
     return X_train_scaled, X_validate_scaled, X_test_scaled
+
+################################################# Create Top Ten Labels Feature #################################################
+
+def get_top_ten_labels(df):
+    # Create a dataframe of the mean of popularity and label count grouped by label
+    biggest_labels = df.groupby('label').popularity.agg(['mean', 'count']).sort_values(by=['count', 'mean'], ascending=False).head(20)
+    # Create a list of the top ten labels by popularity
+    top_ten_labels = list(biggest_labels.sort_values(by='mean', ascending=False).head(10).index)
+    # Make a pattern by joining every label in top_ten_labels
+    pattern = '|'.join(top_ten_labels)
+    # Make new column with boolean variable for if the label is contained in the pattern
+    df['top_ten_label'] = df.label.str.contains(pattern)
+    # Convert boolean to int
+    df['top_ten_label'] = df.top_ten_label.astype('int')
+    return df
