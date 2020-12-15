@@ -22,10 +22,10 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 
 ### Timeline
 - [X] Project Planning: December 8th
-- [ ] Aquisition and Prep: December 10th
-- [ ] Exploration: December 14th
-- [ ] Modeling: December 15th
-- [ ] Finalize Minimum Viable Product (MVP): EOD December 15th
+- [X] Aquisition and Prep: December 10th
+- [X] Exploration: December 14th
+- [X] Modeling: December 15th
+- [X] Finalize Minimum Viable Product (MVP): EOD December 15th
 - [ ] Improve/Iterate MVP: December 16th
 - [ ] Finalize Presentation: December 17th
 
