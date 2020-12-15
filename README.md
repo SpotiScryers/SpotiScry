@@ -82,6 +82,12 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 𝐻0: There is no linear relationship between liveness and popularity.<br>
 𝐻𝑎: There is a linear relationship between liveness and popularity.
 
+𝐻0: There is no difference in popularity between tracks released by the top 10 labels or not.<br>
+𝐻𝑎: Tracks released by the top 10 labels are more likely to be popular.
+
+𝐻0: There is no difference in popularity between tracks released by the worst 5 labels or not.<br>
+𝐻𝑎: Tracks released by the worst 5 labels are more likely to be unpopular.
+
 ## Project Steps
 ### Acquire
 Data was acquired from Spotify API using the spotipy library. Going to this website https://developer.spotify.com/dashboard/login lets you create a spotify web app that will give you a client id and client secret. Create an env.py file in your working directory and save this code after swaping out your individual client id and secret:  
