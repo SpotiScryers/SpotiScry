@@ -57,7 +57,19 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 
 ## Initial Thoughts & Hypotheses
 ### Thoughts
+* What are the drivers of popularity on Spotify?
+* Is there a seasonality to the popularity of tracks?
+* Are originals or remixes more popular?
+* Since 2020 has been the year of the pandemic, are more people listening to sad songs right now?
+* Are people's musical tastes expanding or experimenting due to the "new normal" of stay-at-home culture?
+* Does loudness have a relationship with popularity?
+* Does the instrumental-to-lyrical ratio of a track have an effect on its popularity?
+
 ### Hypotheses
+
+$H_{0}$: Mean of song popularity of explicit tracks = Mean of song popularity of non-explicit tracks
+$H_{a}$: Mean of song popularity of explicit tracks > Mean of song popularity of non-explicit tracks
+
 ## Project Steps
 ### Acquire
 Data was acquired from Spotify API using the spotipy library. Going to this website https://developer.spotify.com/dashboard/login lets you create a spotify web app that will give you a client id and client secret. Create an env.py file in your working directory and save this code after swaping out your individual client id and secret:  
