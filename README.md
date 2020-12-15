@@ -84,6 +84,17 @@ Functions to prepare the dataframe are stored in two seperate files depending on
 * bin release year by decade
 
 ### Explore
+During exploration we looked at these features:
+* if a track is explicit
+* liveness
+* song length
+* time signature
+* key
+* loudness
+* original vs remix
+* instrumentalness
+* danceability
+
 ### Model
 ### Conclusions
 ## How to Reproduce
@@ -91,4 +102,4 @@ Functions to prepare the dataframe are stored in two seperate files depending on
 ### Tools & Requirements
 ## License
 ## Creators
-Brandon Martinez, Bethany Thompson, [Kwame V. Taylor](https://github.com/KwameTaylor), Matthew Mays
+Brandon Martinez, Bethany Thompson, [Kwame V. Taylor](https://github.com/KwameTaylor), [Matthew Mays](https://github.com/Matthew-Mays)
