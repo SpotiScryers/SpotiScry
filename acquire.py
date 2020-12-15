@@ -1,6 +1,7 @@
 import pandas as pd
 import spotipy
 import numpy as np
+import os
 
 from spotipy.oauth2 import SpotifyClientCredentials 
 from env import cid, c_secret
@@ -105,14 +106,18 @@ def concat_csv_files():
 
 # sp is the spotipy client you created
 def get_capstone_playlist(sp):
-# Let this loop run as it gathers the tracks from the playlist
-    for offset in range(0, 6000, 100):
-        # Prints out how many pages in the loop is. Each page is 100 tracks + or - a few if nulls appear
-        print(f'Making page with offset = {offset}')
-        # Analyze the first 100 tracks past the offset
-        playlist_df = analyze_playlist('spotify:user:afrodeezeemusic', '3P6Pr6iEqvK5fl4UkgdQ7T', sp, offset)
-        # Write each dataframe of 100 tracks to a csv. If the function ends early in an error you will still have some data
-        playlist_df.to_csv('data/playlist-offset-' + str(offset) + '.csv')
-    # use the concat_csv_files function to concat all the dataframes together into one complete dataframe    
-    df = concat_csv_files()
+    if os.path.exists('data/full-playlist.csv'):
+        df = pd.read_csv('data/full-playlist.csv', index_col=0)
+    else:
+    # Let this loop run as it gathers the tracks from the playlist
+        for offset in range(0, 6000, 100):
+            # Prints out how many pages in the loop is. Each page is 100 tracks + or - a few if nulls appear
+            print(f'Making page with offset = {offset}')
+            # Analyze the first 100 tracks past the offset
+            playlist_df = analyze_playlist('spotify:user:afrodeezeemusic', '3P6Pr6iEqvK5fl4UkgdQ7T', sp, offset)
+            # Write each dataframe of 100 tracks to a csv. If the function ends early in an error you will still have some data
+            playlist_df.to_csv('data/playlist-offset-' + str(offset) + '.csv')
+        # use the concat_csv_files function to concat all the dataframes together into one complete dataframe    
+        df = concat_csv_files()
+        df.to_csv('data/full-playlist.csv')
     return df
