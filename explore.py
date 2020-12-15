@@ -53,17 +53,18 @@ def explicit_ttest(df, alpha=0.05):
     print('Compare variances:')
     explicit_sample = df[df.explicit==True].popularity
     not_explicit_sample = df[df.explicit==False].popularity
-
+    
+    # if [results of lavenes variance test], then equal_var = __ (automate checking similar variance)
     print(explicit_sample.var())
     print(not_explicit_sample.var())
           
-    print("They are not equal, so we will set the argument of equal_var to False.")
+    print("They are of relatively equal variance, so we will set the argument of equal_var to True. After the MVP this will be done with the Levene test instead of by hand.")
     
     print('\n---\n')
           
     print("Compute test statistic and probability (t-statistic & p-value)")
-    t, p = stats.ttest_ind(explicit_sample, not_explicit_sample, equal_var = False)
-    print('Test statistic:', t, '\n', p/2, '\n', alpha)
+    t, p = stats.ttest_ind(explicit_sample, not_explicit_sample, equal_var = True)
+    print('Test statistic:', t, '\np-value:', p/2, '\nalpha:', alpha)
     
     print('\n---\n')
     
