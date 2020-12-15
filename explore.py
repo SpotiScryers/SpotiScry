@@ -26,7 +26,7 @@ def explicit_viz(df):
     This function produces a swarm plot on explicit tracks' and non-explicit tracks' popularity.
     '''
     print('Does a track being explicit or not correlate with its popularity?')
-    sns.catplot(x="explicit", y="popularity", kind="swarm", data=df)
+    sns.catplot(x="explicit", y="popularity", kind="swarm", data=df, height=8, aspect=1)
 
 def explicit_ttest(df, alpha=0.05):
     '''
