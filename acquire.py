@@ -1,6 +1,7 @@
 import pandas as pd
 import spotipy
 import numpy as np
+import os
 
 from spotipy.oauth2 import SpotifyClientCredentials 
 from env import cid, c_secret
@@ -21,7 +22,7 @@ def create_spotipy_client():
 def analyze_playlist(creator, playlist_id, sp_client, offset=0):
     
     # Create empty dataframe
-    playlist_features_list = ["artist","album","release_date","track_name","track_id",'album_popularity','label',
+    playlist_features_list = ["artist","album","release_date","track_name","track_id", 'label',
                               "danceability","energy","key","loudness","mode", "speechiness","instrumentalness",
                               "liveness","valence","tempo", "duration_ms","time_signature"]
     
@@ -51,19 +52,19 @@ def analyze_playlist(creator, playlist_id, sp_client, offset=0):
             # Get audio features
             audio_features = sp_client.audio_features(playlist_features["track_id"])
             if audio_features is None:
-                for feature in playlist_features_list[7:]:
+                for feature in playlist_features_list[6:]:
                     playlist_features[feature] = None
             elif audio_features[0] is None:
-                    for feature in playlist_features_list[7:]:
+                    for feature in playlist_features_list[6:]:
                         playlist_features[feature] = None
             else:
-                for feature in playlist_features_list[7:]:
+                for feature in playlist_features_list[6:]:
                     playlist_features[feature] = audio_features[0][feature]
             
             # Get album popularity
             album_features = sp_client.album(playlist_features['album_id'])
             if album_features is None:
-                for feature in playlist_features_list[5:7]:
+                for feature in playlist_features_list[5:6]:
                     playlist_features[feature] = None
             else:
                 playlist_features['album_popularity'] = album_features['popularity']
@@ -103,15 +104,20 @@ def concat_csv_files():
 
 ###################################################### Gather Entire Capstone Playlist ######################################################
 
-    def get_capstone_playlist():
+# sp is the spotipy client you created
+def get_capstone_playlist(sp):
+    if os.path.exists('data/full-playlist.csv'):
+        df = pd.read_csv('data/full-playlist.csv', index_col=0)
+    else:
     # Let this loop run as it gathers the tracks from the playlist
-    for offset in range(0, 6000, 100):
-        # Prints out how many pages in the loop is. Each page is 100 tracks + or - a few if nulls appear
-        print(f'Making page with offset = {offset}')
-        # Analyze the first 100 tracks past the offset
-        playlist_df = analyze_playlist('spotify:user:afrodeezeemusic', '3P6Pr6iEqvK5fl4UkgdQ7T', sp, offset)
-        # Write each dataframe of 100 tracks to a csv. If the function ends early in an error you will still have some data
-        playlist_df.to_csv('data/playlist-offset-' + str(offset) + '.csv')
-    # use the concat_csv_files function to concat all the dataframes together into one complete dataframe    
-    df = concat_csv_files()
+        for offset in range(0, 6000, 100):
+            # Prints out how many pages in the loop is. Each page is 100 tracks + or - a few if nulls appear
+            print(f'Making page with offset = {offset}')
+            # Analyze the first 100 tracks past the offset
+            playlist_df = analyze_playlist('spotify:user:afrodeezeemusic', '3P6Pr6iEqvK5fl4UkgdQ7T', sp, offset)
+            # Write each dataframe of 100 tracks to a csv. If the function ends early in an error you will still have some data
+            playlist_df.to_csv('data/playlist-offset-' + str(offset) + '.csv')
+        # use the concat_csv_files function to concat all the dataframes together into one complete dataframe    
+        df = concat_csv_files()
+        df.to_csv('data/full-playlist.csv')
     return df

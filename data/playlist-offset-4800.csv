@@ -1,0 +1,101 @@
+,artist,album,release_date,track_name,track_id,album_popularity,label,danceability,energy,key,loudness,mode,speechiness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature,explicit,popularity,disc_number,track_number,album_id,album_type
+0,Angel Haze,Reservation,2013-07-17,Supreme,1mRietdncxOtWGC2ntQnFB,30,Angel Haze,0.641,0.946,0,-5.498,1,0.143,0,0.0962,0.505,90.079,181107,4,True,16.0,1.0,4.0,5FsWjxWO600RCZ6FhSkge7,album
+1,Angel Haze,Reservation,2013-07-17,New York,0X2Jwps2m5JCqEA53ZsnuQ,30,Angel Haze,0.716,0.835,7,-6.89,1,0.379,0.00446,0.0928,0.865,203.783,208509,4,True,17.0,1.0,5.0,5FsWjxWO600RCZ6FhSkge7,album
+2,Angel Haze,Reservation,2013-07-17,Hot Like Fire,3W2aqANNWai4EGpRoNYCcf,30,Angel Haze,0.68,0.797,4,-4.398,0,0.184,0,0.67,0.774,82.47,213577,4,True,16.0,1.0,6.0,5FsWjxWO600RCZ6FhSkge7,album
+3,Angel Haze,Reservation,2013-07-17,Werkin Girls,1578JYtrvhIZH5zyuxIb2x,30,Angel Haze,0.597,0.891,8,-6.058,1,0.368,0,0.262,0.738,151.876,185104,4,True,26.0,1.0,7.0,5FsWjxWO600RCZ6FhSkge7,album
+4,Angel Haze,Reservation,2013-07-17,Gypsy Letters,4HjGq0Bo8joDVlFVmFuXrm,30,Angel Haze,0.768,0.65,9,-8.492,1,0.132,0,0.52,0.514,115.359,224836,4,True,16.0,1.0,8.0,5FsWjxWO600RCZ6FhSkge7,album
+5,Angel Haze,Reservation,2013-07-17,Jungle Fever (feat. Kool a.D),2WlSsraq5wnbSVHOEX28cD,30,Angel Haze,0.844,0.573,4,-6.662,1,0.247,0,0.0532,0.896,119.977,257463,4,True,22.0,1.0,9.0,5FsWjxWO600RCZ6FhSkge7,album
+6,Angel Haze,Reservation,2013-07-17,Realest,1hRYi8xiSslVC1zENJyHsI,30,Angel Haze,0.537,0.859,9,-4.841,0,0.253,0,0.244,0.516,139.93,188186,4,True,14.0,1.0,10.0,5FsWjxWO600RCZ6FhSkge7,album
+7,Angel Haze,Reservation,2013-07-17,Castle on a Cloud,5QQixeNGIo2pQi0qC777Rh,30,Angel Haze,0.778,0.627,7,-6.334,1,0.309,7.14e-06,0.125,0.535,152.974,199784,4,True,18.0,1.0,11.0,5FsWjxWO600RCZ6FhSkge7,album
+8,Angel Haze,Reservation,2013-07-17,Suffering's First (feat. Sara Tavares),2mva8fDtiML91pwXb5GUtU,30,Angel Haze,0.602,0.711,4,-6.996,0,0.281,0,0.0888,0.668,84.046,303360,4,True,17.0,1.0,12.0,5FsWjxWO600RCZ6FhSkge7,album
+9,Angel Haze,Reservation,2013-07-17,Drop It,5AzVf72bipqz0tvjUVB4eZ,30,Angel Haze,0.69,0.904,3,-2.345,0,0.0975,0,0.0693,0.916,145.94,200150,4,True,14.0,1.0,13.0,5FsWjxWO600RCZ6FhSkge7,album
+10,Angel Haze,Reservation,2013-07-17,Smiles n Hearts,36uIgZABtDWzOdokdntYtx,30,Angel Haze,0.731,0.689,0,-6.08,0,0.311,1.58e-05,0.379,0.479,125.374,380813,4,True,15.0,1.0,14.0,5FsWjxWO600RCZ6FhSkge7,album
+11,Angel Haze,Back to the Woods,2015-09-15,D-Day,3mT4mGHkAOQiBYm3Qejhd9,43,Angel Haze,0.614,0.881,10,-6.707,0,0.308,4.17e-05,0.089,0.543,110.202,96243,4,True,21.0,1.0,1.0,6a2TzyEO253B3Rb37o2dL7,album
+12,Angel Haze,Back to the Woods,2015-09-15,Impossible,0VEQdqorsI0rScglzVJsaa,43,Angel Haze,0.813,0.88,7,-5.24,1,0.237,0,0.105,0.819,129.994,179827,4,True,25.0,1.0,2.0,6a2TzyEO253B3Rb37o2dL7,album
+13,Angel Haze,Back to the Woods,2015-09-15,On Fire,289TfYGTKB3ssMELHK5K55,43,Angel Haze,0.506,0.78,1,-7.255,1,0.365,9.82e-06,0.342,0.331,105.026,166653,4,True,21.0,1.0,3.0,6a2TzyEO253B3Rb37o2dL7,album
+14,Angel Haze,Back to the Woods,2015-09-15,The Wolves,107gBT9fxcFsPYbihAHcPV,43,Angel Haze,0.535,0.834,8,-7.517,0,0.526,0.00485,0.219,0.388,119.791,220813,4,True,25.0,1.0,4.0,6a2TzyEO253B3Rb37o2dL7,album
+15,Angel Haze,Back to the Woods,2015-09-15,Moonrise Kingdom,7xMNQlcI9Djbf0421BXLZd,43,Angel Haze,0.576,0.767,3,-6.929,0,0.145,0.00413,0.0954,0.197,151.962,267383,4,True,48.0,1.0,5.0,6a2TzyEO253B3Rb37o2dL7,album
+16,Angel Haze,Back to the Woods,2015-09-15,Detox,1dJ07sXt1EAMFV3eLpkxTw,43,Angel Haze,0.545,0.548,5,-8.353,0,0.29,1.19e-05,0.307,0.0708,99.781,336900,4,True,21.0,1.0,6.0,6a2TzyEO253B3Rb37o2dL7,album
+17,Angel Haze,Back to the Woods,2015-09-15,Dark Places,21tf8QdqZVle6eq9ROHrmj,43,Angel Haze,0.42,0.735,2,-7.778,0,0.242,0,0.108,0.156,123.131,275747,4,True,22.0,1.0,7.0,6a2TzyEO253B3Rb37o2dL7,album
+18,Angel Haze,Back to the Woods,2015-09-15,The Eulogy,7h5PLl58ODwMnv25edXnhj,43,Angel Haze,0.628,0.347,5,-10.561,0,0.042,4.04e-05,0.0904,0.0396,90.053,224919,4,True,19.0,1.0,8.0,6a2TzyEO253B3Rb37o2dL7,album
+19,Angel Haze,Back to the Woods,2015-09-15,Gods,4DlurDDPPNPFyoyNYcBb17,43,Angel Haze,0.633,0.821,1,-6.461,0,0.393,0,0.672,0.547,119.943,228333,4,True,20.0,1.0,9.0,6a2TzyEO253B3Rb37o2dL7,album
+20,Angel Haze,Back to the Woods,2015-09-15,Bruises,0kjfpxVTJMgGEZONBMaj1N,43,Angel Haze,0.564,0.627,5,-6.541,1,0.0294,0.000265,0.29,0.137,91.997,249554,4,True,19.0,1.0,11.0,6a2TzyEO253B3Rb37o2dL7,album
+21,Angel Haze,Back to the Woods,2015-09-15,Exposed,4p9joekuHFrvOavs2SeVBa,43,Angel Haze,0.686,0.477,3,-12.044,0,0.411,0,0.0945,0.0655,89.77,264800,4,True,19.0,1.0,12.0,6a2TzyEO253B3Rb37o2dL7,album
+22,Angel Haze,Back to the Woods,2015-09-15,The Woods,3P4LhZdYGo413eDxKKuzjG,43,Angel Haze,0.389,0.638,2,-9.628,0,0.466,0.00013,0.386,0.166,94.791,296928,4,True,19.0,1.0,13.0,6a2TzyEO253B3Rb37o2dL7,album
+23,Quay Dash,U.A.F.W.M.,2018-07-25,U.A.F.W.M.,7tyfn9k8LGkDFMkT4BeCyf,33,Quay Dash,0.895,0.707,11,-8.446,1,0.0927,0.054,0.131,0.22,117.006,173462,4,True,40.0,1.0,1.0,6Q068g9ukV72Ffm88FMKYt,single
+24,Quay Dash,Queen Of This Shit,2017-10-26,Queen Of This Shit,6JrmHzxhaaavRtlXTOhm63,42,Quay Dash,0.876,0.412,1,-12.184,0,0.349,6.42e-05,0.262,0.607,119.979,186122,4,True,49.0,1.0,1.0,6qu9QGQPrAlTOJLGeKeQBK,single
+25,Quay Dash,Transphobic,2017-07-07,Bossed Up,2Ht7vK4FOBUnl2C80OdQsO,34,Quay Dash,0.942,0.394,1,-9.003,1,0.312,0.00493,0.201,0.164,105.978,135053,4,True,29.0,1.0,1.0,2vkSCPeqGqr2iCDZEbtieZ,single
+26,Quay Dash,Transphobic,2017-07-07,Wilin',0vzyFZOrV9PAm7UjXvMWqe,34,Quay Dash,0.868,0.782,6,-6.364,0,0.0999,1.32e-05,0.0758,0.514,129.976,158380,4,True,18.0,1.0,2.0,2vkSCPeqGqr2iCDZEbtieZ,single
+27,Quay Dash,Transphobic,2017-07-07,Queen Of NY,5AzdP6M3H2SH2Bwinh7x1R,34,Quay Dash,0.663,0.743,1,-12.937,1,0.139,2.13e-05,0.36,0.842,92.37,190000,4,True,24.0,1.0,3.0,2vkSCPeqGqr2iCDZEbtieZ,single
+28,Quay Dash,Transphobic,2017-07-07,Squared Toe Leather Boot,6gAAdgZeS65b9JvdVJpeTj,34,Quay Dash,0.856,0.359,8,-16.237,1,0.167,0.0541,0.109,0.344,115.591,150000,4,True,22.0,1.0,4.0,2vkSCPeqGqr2iCDZEbtieZ,single
+29,Quay Dash,Transphobic,2017-07-07,I Need A Bag,1pScsiFDyYFHy218jUPWI1,34,Quay Dash,0.851,0.291,11,-11.938,1,0.2,0.427,0.102,0.109,129.989,192938,4,True,22.0,1.0,5.0,2vkSCPeqGqr2iCDZEbtieZ,single
+30,Quay Dash,Transphobic,2017-07-07,Decline Him,3Wa96y3cQWjIX9gN2dTb5t,34,Quay Dash,0.874,0.528,0,-8.477,1,0.314,5.01e-05,0.0822,0.488,76.508,213333,4,True,36.0,1.0,6.0,2vkSCPeqGqr2iCDZEbtieZ,single
+31,Maluca,El Tigeraso,2009-08-25,El Tigeraso,15Wf6njlvWcczVdVqlnLCV,29,Mad Decent,0.64,0.731,4,-7.409,0,0.124,0.0566,0.335,0.539,166.009,167773,4,False,36.0,1.0,1.0,7pMI3KqEUwKA1lGzSTtTEm,single
+32,Happy Colors,Bodega,2018-08-17,Bodega,2gfDPcjQdIUff73zj1CcAJ,9,Sony Music Latin,0.628,0.874,9,-3.734,0,0.0766,0.033,0.204,0.72,109.875,194062,4,False,14.0,1.0,1.0,51u4CmgLssiD2YSWkDFbeU,single
+33,DeJ Loaf,It's A Set Up!,2020-05-22,It's A Set Up!,0Jqv6jmIoGnDveEp4fcAQQ,26,BMG Rights Management (US) LLC,0.59,0.655,8,-8.044,0,0.144,0,0.0962,0.388,81.275,165206,4,True,23.0,1.0,1.0,0PXMXiZj56UubO2K2nOMs3,single
+34,DeJ Loaf,It's A Set Up!,2020-05-22,Technical Foul,5cl9ctGTYjNxlp7YmtrjPn,26,BMG Rights Management (US) LLC,0.714,0.59,1,-7.636,0,0.241,0,0.143,0.217,120.097,160250,4,True,21.0,1.0,2.0,0PXMXiZj56UubO2K2nOMs3,single
+35,DeJ Loaf,It's A Set Up!,2020-05-22,No Passes,3tUn0JIC2RQjJEOk2SJ1OM,26,BMG Rights Management (US) LLC,0.781,0.556,1,-6.693,1,0.102,1.38e-06,0.312,0.23,91.013,199069,4,True,26.0,1.0,3.0,0PXMXiZj56UubO2K2nOMs3,single
+36,DeJ Loaf,It's A Set Up!,2020-05-22,"Rat (feat. Baby Money, Babys World & Tay B)",2WQMlc2mNBO2j1mYLUo0qb,26,BMG Rights Management (US) LLC,0.831,0.636,2,-8.883,1,0.207,0,0.124,0.26,101.972,269063,4,True,21.0,1.0,4.0,0PXMXiZj56UubO2K2nOMs3,single
+37,DeJ Loaf,No Saint,2020-05-29,No Saint,2mjijO7qtkwGhZ8IxNCaUY,34,BMG Rights Management (US) LLC,0.549,0.219,7,-13.109,1,0.231,0.000317,0.13,0.0951,78.012,163140,4,True,32.0,1.0,1.0,5ML6NkrrSxCePgOaOPdQbS,single
+38,DeJ Loaf,No Saint,2020-05-29,All Dogs Go To Heaven,4PbnLS6UhQLKku1X8q3Z1Z,34,BMG Rights Management (US) LLC,0.727,0.417,11,-10.165,0,0.201,2.95e-05,0.115,0.344,93.044,149840,4,True,27.0,1.0,2.0,5ML6NkrrSxCePgOaOPdQbS,single
+39,DeJ Loaf,No Saint,2020-05-29,Provide At All,4wV1W6M5bzYA3UAlT92SC4,34,BMG Rights Management (US) LLC,0.785,0.487,10,-8.894,0,0.33,0,0.121,0.224,89.991,234800,4,True,29.0,1.0,3.0,5ML6NkrrSxCePgOaOPdQbS,single
+40,DeJ Loaf,No Saint,2020-05-29,Running Through My Mind,3iU4lKimVijNtWIHwu00Yt,34,BMG Rights Management (US) LLC,0.397,0.689,0,-8.652,1,0.0509,0.000172,0.288,0.459,167.957,185840,4,True,35.0,1.0,4.0,5ML6NkrrSxCePgOaOPdQbS,single
+41,DeJ Loaf,No Ceiling (feat. Gunna),2020-10-21,No Ceiling (feat. Gunna),0xbmbJG6VBshvfBj0rU7CC,43,BMG Rights Management (US) LLC,0.769,0.68,8,-5.469,1,0.328,0,0.144,0.379,170.018,162795,4,True,50.0,1.0,1.0,7jtTATd3D3TIIghIVnn6yh,single
+42,Saweetie,High Maintenance,2018-03-16,Intro,1WPBD8Vw0LrG4nSxHNolEu,66,ICY/Artistry Records/Warner Records,0.454,0.947,5,-8.445,0,0.95,2.6e-06,0.433,0.739,187.508,30024,4,True,28.0,1.0,1.0,4Sz0PugCLKo0CEA7zgPplW,album
+43,Saweetie,High Maintenance,2018-03-16,Agua,6G6tj5i11XdmaRmPqGIhdd,66,ICY/Artistry Records/Warner Records,0.711,0.683,0,-6.712,0,0.0328,3.14e-06,0.145,0.647,139.945,190213,4,True,33.0,1.0,3.0,4Sz0PugCLKo0CEA7zgPplW,album
+44,Saweetie,High Maintenance,2018-03-16,Good Good,3KmUrUs6pqJaPqpswIKN6C,66,ICY/Artistry Records/Warner Records,0.637,0.79,8,-5.854,0,0.0449,2.65e-05,0.287,0.612,161.997,201583,4,True,46.0,1.0,4.0,4Sz0PugCLKo0CEA7zgPplW,album
+45,Saweetie,High Maintenance,2018-03-16,High Maintenance,3pxHcgYG8aKkclfWXBFSWv,66,ICY/Artistry Records/Warner Records,0.903,0.758,9,-4.884,0,0.253,5.37e-06,0.115,0.871,99.925,49242,4,True,53.0,1.0,6.0,4Sz0PugCLKo0CEA7zgPplW,album
+46,Saweetie,High Maintenance,2018-03-16,23,2gXRNYnDxEOSMP1neokTg9,66,ICY/Artistry Records/Warner Records,0.642,0.819,0,-4.473,1,0.16,0,0.0664,0.481,160.003,165080,4,True,41.0,1.0,7.0,4Sz0PugCLKo0CEA7zgPplW,album
+47,Saweetie,High Maintenance,2018-03-16,Respect,4tMphqbDECmRVcJINgZhTV,66,ICY/Artistry Records/Warner Records,0.754,0.758,1,-6.968,1,0.168,0,0.137,0.492,140.131,164493,4,True,34.0,1.0,8.0,4Sz0PugCLKo0CEA7zgPplW,album
+48,Saweetie,High Maintenance,2018-03-16,Too Many,2iXLiWWCeqtntRCFcuaHKo,66,ICY/Artistry Records/Warner Records,0.771,0.627,6,-5.324,0,0.0511,0,0.143,0.463,139.837,238117,4,True,39.0,1.0,9.0,4Sz0PugCLKo0CEA7zgPplW,album
+49,Saweetie,ICY,2019-03-29,Trick,3xZ0dY1gtNwiZpFfAuH6MT,50,2TE Records,0.722,0.631,3,-7.696,0,0.274,0.00406,0.174,0.599,177.996,158870,4,True,22.0,1.0,1.0,2advSZrPipBX01SA4fwFl8,album
+50,Saweetie,ICY,2019-03-29,Tip Toes (feat. Quavo),2Zk0SKX7QXNQMmjOsRw98K,50,2TE Records,0.911,0.636,1,-6.202,1,0.198,0,0.0959,0.431,88.956,171236,4,True,36.0,1.0,2.0,2advSZrPipBX01SA4fwFl8,album
+51,Saweetie,ICY,2019-03-29,My Type,6nxcOGl5E292RUh7iR7KTW,50,2TE Records,0.899,0.811,2,-6.294,1,0.258,0,0.0672,0.587,105.038,126446,4,True,56.0,1.0,3.0,2advSZrPipBX01SA4fwFl8,album
+52,Saweetie,ICY,2019-03-29,Emotional (feat. Quavo),6Dlx1CFrSGm6tl1gYA65AC,50,2TE Records,0.791,0.655,5,-7.413,0,0.277,1.5e-05,0.0614,0.526,184.091,190429,4,True,33.0,1.0,4.0,2advSZrPipBX01SA4fwFl8,album
+53,Saweetie,ICY,2019-03-29,Dipped In Ice,3xFPjEhJluKAyPf7KgWVUd,50,2TE Records,0.812,0.59,8,-6.612,1,0.101,0.00434,0.0793,0.53,172.102,169410,4,True,30.0,1.0,5.0,2advSZrPipBX01SA4fwFl8,album
+54,Saweetie,ICY,2019-03-29,Hot Boy,4JLuOyUZbySPoY0OSfZD9h,50,2TE Records,0.775,0.626,1,-6.637,1,0.0528,1.59e-06,0.116,0.182,100.043,283468,4,True,18.0,1.0,6.0,2advSZrPipBX01SA4fwFl8,album
+55,Saweetie,ICY,2019-03-29,1 of 1,5Atilu9AROElxkqIBMailO,50,2TE Records,0.717,0.649,1,-8.343,1,0.0798,0,0.099,0.259,167.016,174026,4,True,21.0,1.0,7.0,2advSZrPipBX01SA4fwFl8,album
+56,Rubi Rose,Pogo (feat. K CAMP),2020-09-18,Pogo (feat. K CAMP),4eqVP2pCtYa5scpmLM18kg,46,HITCO,0.875,0.565,8,-4.691,1,0.108,0,0.312,0.398,109.054,159236,4,True,53.0,1.0,1.0,3Wp4EnplOv4myv6ExvWTu6,single
+57,Rubi Rose,Pretty MF,2020-04-24,Pretty MF,74MmWZ6EvrKV8LObhTpEXC,46,HITCO,0.788,0.455,1,-7.544,1,0.0667,0.000134,0.102,0.12,94.013,133425,4,True,53.0,1.0,1.0,4w73wUf6HzTse55M0pJw6G,single
+58,Rubi Rose,Big Mouth,2019-06-02,Big Mouth,3MPTswx7dlPqibY1ikZqgE,53,HITCO,0.787,0.658,1,-7.185,1,0.0792,4.55e-05,0.12,0.603,95.023,138346,4,True,60.0,1.0,1.0,4ihoxbHlptnDCXbl5eYAr5,single
+59,Rubi Rose,Trickin,2019-01-08,Trickin,5upLXtplDgnKiCrT2MYRHX,28,Electric Republic,0.758,0.641,8,-6.725,1,0.208,0,0.339,0.544,75.98,175304,4,True,35.0,1.0,1.0,3gsuXJ8KyZdS2WPaApCGN2,single
+60,Lizzo,Big GRRRL Small World,2015-12-11,Ride,2CXIyu5hjXoXcrOKTc101F,43,Bgsw,0.808,0.885,7,-4.062,1,0.227,0,0.169,0.56,112.033,229918,4,True,24.0,1.0,3.0,40T5m4a19xUgVyWQaYrVRb,album
+61,Lizzo,Lizzobangers,2014-01-01,Lizzie Borden,2sYuNR9W9RIkgdashHhj3D,42,EMI,0.446,0.859,1,-4.827,1,0.371,0,0.418,0.785,179.583,157759,4,True,38.0,1.0,1.0,32UJ8XJogn6T8JSENLETMS,album
+62,Lizzo,Lizzobangers,2014-01-01,W.E.R.K. Pt. II,3sj4Wh9t1hodxNqG1GxOCK,42,EMI,0.878,0.946,8,-4.544,0,0.462,0,0.618,0.8,133.924,185660,4,True,37.0,1.0,2.0,32UJ8XJogn6T8JSENLETMS,album
+63,Lizzo,Lizzobangers,2014-01-01,Wat U Mean,3pBwF537Mhh1NgZcxi9vbf,42,EMI,0.783,0.677,2,-4.251,1,0.06,1.17e-06,0.146,0.683,96.038,163904,4,True,21.0,1.0,3.0,32UJ8XJogn6T8JSENLETMS,album
+64,Lizzo,Lizzobangers,2014-01-01,T-Baby,5huAmqGGPjKQDztp1gd22J,42,EMI,0.816,0.775,11,-5.165,0,0.304,0,0.469,0.747,139.957,195670,4,True,35.0,1.0,4.0,32UJ8XJogn6T8JSENLETMS,album
+65,Lizzo,Lizzobangers,2014-01-01,Hot Dish,7wK5i469eiUVY5Tgd31up6,42,EMI,0.445,0.764,11,-2.956,0,0.251,0,0.0858,0.316,79.294,220051,4,True,19.0,1.0,7.0,32UJ8XJogn6T8JSENLETMS,album
+66,Lizzo,Lizzobangers,2014-01-01,Luv It,6WsUYvasui2COM6X7y6Q36,42,EMI,0.75,0.708,10,-7.331,0,0.324,0,0.0934,0.826,87.832,183007,4,True,34.0,1.0,8.0,32UJ8XJogn6T8JSENLETMS,album
+67,Lizzo,Lizzobangers,2014-01-01,Pants Vs. Dress,0MGuM11PJVgmmhBy3Z1bNo,42,EMI,0.817,0.789,9,-4.488,0,0.326,0,0.251,0.746,115.41,152908,4,True,20.0,1.0,10.0,32UJ8XJogn6T8JSENLETMS,album
+68,Lizzo,Lizzobangers,2014-01-01,Go,0zS46fO56q3UzVmdTh1Mr0,42,EMI,0.659,0.609,7,-7.023,1,0.209,1.2e-05,0.136,0.244,135.909,224654,4,True,18.0,1.0,11.0,32UJ8XJogn6T8JSENLETMS,album
+69,Lizzo,Lizzobangers,2014-01-01,Bloodlines,4lDQ5S1k6s5bNvIiTcBppS,42,EMI,0.555,0.805,2,-6.677,1,0.0778,1.14e-05,0.087,0.322,141.823,224815,4,True,19.0,1.0,12.0,32UJ8XJogn6T8JSENLETMS,album
+70,Lizzo,Lizzobangers,2014-01-01,Bus Passes And Happy Meals,52T7HvjIR2S3mbcQsjIjRW,42,EMI,0.754,0.45,10,-7.396,0,0.0874,0.000196,0.183,0.0385,90.0,197462,4,True,20.0,1.0,13.0,32UJ8XJogn6T8JSENLETMS,album
+71,Lizzo,Lizzobangers,2014-01-01,Paris,6lcbRaaL7XMZ2PFqvOZU7G,42,EMI,0.778,0.795,7,-4.986,1,0.222,1.17e-05,0.0856,0.506,84.005,191364,4,True,34.0,1.0,14.0,32UJ8XJogn6T8JSENLETMS,album
+72,Lizzo,Tempo (feat. Missy Elliott),2019-03-20,Juice,68NXcaBtQoTqHTfItHUf6E,44,Atlantic Records,0.767,0.889,7,-2.988,1,0.0963,0,0.402,0.843,119.93,195145,4,True,31.0,1.0,2.0,1zt4HVA2H5uh8SldrOfCMh,single
+73,Lizzo,Tempo (feat. Missy Elliott),2019-03-20,Cuz I Love You,2EZsEU4hCVGXOMhdQtvR1y,44,Atlantic Records,0.566,0.66,1,-4.039,1,0.0479,0,0.234,0.52,162.159,179979,3,True,28.0,1.0,3.0,1zt4HVA2H5uh8SldrOfCMh,single
+74,Lizzo,Fitness,2018-03-30,Fitness,0FhBANnxcQBgD3tQ75WFAn,52,Nice Life/Atlantic,0.879,0.732,11,-5.016,0,0.061,0,0.0656,0.355,120.052,156284,4,False,59.0,1.0,1.0,3JtDo6OmIf78RSc94KdWMR,single
+75,Lizzo,Boys (Remixes),2019-01-01,Boys,3R9RSIkgkZXrIgmBHGemlV,51,Nice Life/Atlantic,0.892,0.588,1,-4.287,0,0.11,0.000162,0.0498,0.753,120.042,172630,4,False,56.0,1.0,1.0,1OhlGc0ktAKbD1GqlfvpcK,single
+76,Lizzo,Boys (Remixes),2019-01-01,Boys - Pink Panda Remix,6Mvy3eREKn218AVZVUubOy,51,Nice Life/Atlantic,0.853,0.938,6,-4.907,1,0.0953,0.00105,0.545,0.848,126.008,143095,4,False,35.0,1.0,2.0,1OhlGc0ktAKbD1GqlfvpcK,single
+77,Lizzo,Boys (Remixes),2019-01-01,Boys - Black Caviar Remix,5MczYuYdsF4IE1b8ZEZqfy,51,Nice Life/Atlantic,0.861,0.815,8,-7.669,1,0.0573,0.0758,0.165,0.911,121.984,234098,4,False,36.0,1.0,3.0,1OhlGc0ktAKbD1GqlfvpcK,single
+78,Lizzo,Boys (Remixes),2019-01-01,Boys - Juice Boys Remix,0CuAvao3uDcSN73qWNJ2OQ,51,Nice Life/Atlantic,0.816,0.782,6,-7.863,0,0.0661,0.0251,0.0431,0.53,126.022,157129,4,False,40.0,1.0,4.0,1OhlGc0ktAKbD1GqlfvpcK,single
+79,Lizzo,Boys (Remixes),2019-01-01,Boys - Dave Audé Remix,465SV2UOSLn2XYN5AmNKDd,51,Nice Life/Atlantic,0.808,0.753,11,-5.231,0,0.0765,0.33,0.0264,0.742,122.997,267317,4,False,32.0,1.0,5.0,1OhlGc0ktAKbD1GqlfvpcK,single
+80,Lizzo,Coconut Oil,2016-10-07,Worship,5D9Nw6HyFH0k40X8RxHfD6,56,Nice Life/Atlantic,0.808,0.888,5,-2.435,0,0.117,0.00125,0.0584,0.788,124.989,177842,4,True,53.0,1.0,1.0,5RVuRq4HKlj8LkapG1Tcrv,single
+81,Lizzo,Coconut Oil,2016-10-07,Phone,6BbzwGV5f3RXjj9UJP3Roc,56,Nice Life/Atlantic,0.914,0.526,2,-3.698,1,0.299,1.7e-05,0.053,0.819,140.005,169043,4,True,34.0,1.0,2.0,5RVuRq4HKlj8LkapG1Tcrv,single
+82,Lizzo,Coconut Oil,2016-10-07,Scuse Me,26Q7f4tUntDtlL4EyZz65X,56,Nice Life/Atlantic,0.803,0.833,0,-4.5,0,0.0844,1.43e-06,0.152,0.783,130.002,204393,4,True,55.0,1.0,3.0,5RVuRq4HKlj8LkapG1Tcrv,single
+83,Lizzo,Coconut Oil,2016-10-07,Deep,7G4zqUWXpbRDc5ian2oos8,56,Nice Life/Atlantic,0.781,0.848,2,-5.469,1,0.0565,2.67e-05,0.0454,0.909,116.002,194751,4,True,46.0,1.0,4.0,5RVuRq4HKlj8LkapG1Tcrv,single
+84,Lizzo,Coconut Oil,2016-10-07,Good as Hell,043CB5VqGkGOXOCndP650N,56,Nice Life/Atlantic,0.682,0.919,0,-3.18,0,0.0875,0,0.442,0.535,95.982,159736,4,False,43.0,1.0,5.0,5RVuRq4HKlj8LkapG1Tcrv,single
+85,Lizzo,Coconut Oil,2016-10-07,Coconut Oil,6E44nO0qqQqfmXOhQPp0MM,56,Nice Life/Atlantic,0.461,0.727,0,-6.346,1,0.504,0,0.354,0.551,138.042,265336,4,True,52.0,1.0,6.0,5RVuRq4HKlj8LkapG1Tcrv,single
+86,Lizzo,Phone,2016-09-16,Phone,61yntOSHzW2kTeEsLhOH9c,42,Nice Life/Atlantic,0.914,0.526,2,-3.698,1,0.299,1.7e-05,0.053,0.819,140.005,169043,4,True,49.0,1.0,1.0,2MiUqzCCfWD0hLJvQXfBG2,single
+87,M.I.A.,Kala,2007-08-20,Bamboo Banga,5CIe9u7lex3fxPmwWqrjo3,62,XL Recordings,0.805,0.918,9,-4.554,1,0.212,0,0.0691,0.713,125.984,298360,4,False,33.0,1.0,1.0,2xoj2gYed3IYmGWn3owSfu,album
+88,M.I.A.,Kala,2007-08-20,Boyz,6cL7d5UxAmU4gr0PVzk2Z9,62,XL Recordings,0.633,0.856,6,-6.879,0,0.226,1.53e-06,0.681,0.62,133.133,207467,4,False,36.0,1.0,3.0,2xoj2gYed3IYmGWn3owSfu,album
+89,M.I.A.,Kala,2007-08-20,Jimmy,60r0mEqH580d1kYWGeEpwM,62,XL Recordings,0.689,0.807,6,-4.551,0,0.0318,1.43e-06,0.0971,0.822,124.278,209213,4,False,36.0,1.0,4.0,2xoj2gYed3IYmGWn3owSfu,album
+90,M.I.A.,Kala,2007-08-20,Hussel,6jKz6U5RNJC3l8CRb8sOs6,62,XL Recordings,0.726,0.763,8,-6.829,1,0.143,0,0.0861,0.572,114.795,265480,4,False,28.0,1.0,5.0,2xoj2gYed3IYmGWn3owSfu,album
+91,M.I.A.,Kala,2007-08-20,Mango Pickle Down River,3HLOiOHrX2N8fZklMHXMU2,62,XL Recordings,0.85,0.444,2,-9.122,1,0.328,0.00299,0.165,0.574,95.704,233653,4,False,28.0,1.0,6.0,2xoj2gYed3IYmGWn3owSfu,album
+92,M.I.A.,Kala,2007-08-20,World Town,5MdcPEO79psyMdVODwgmLo,62,XL Recordings,0.833,0.865,7,-7.872,1,0.131,0.14,0.171,0.664,133.013,233600,4,False,30.0,1.0,8.0,2xoj2gYed3IYmGWn3owSfu,album
+93,M.I.A.,Kala,2007-08-20,The Turn,1QbX7wtz9Vlxi2mHxr1buh,62,XL Recordings,0.683,0.629,9,-6.665,0,0.0971,0.00275,0.23,0.375,177.285,232413,4,False,23.0,1.0,9.0,2xoj2gYed3IYmGWn3owSfu,album
+94,M.I.A.,Kala,2007-08-20,XR2,0Q5T7uWae1WD3pSpWRbDfM,62,XL Recordings,0.852,0.93,2,-3.962,1,0.0736,0.774,0.0746,0.2,130.037,260693,4,False,29.0,1.0,10.0,2xoj2gYed3IYmGWn3owSfu,album
+95,M.I.A.,Kala,2007-08-20,Paper Planes,1ixbwbeBi5ufN4noUKmW5a,62,XL Recordings,0.447,0.848,2,-6.175,1,0.222,7.46e-05,0.65,0.485,172.253,205200,4,False,68.0,1.0,11.0,2xoj2gYed3IYmGWn3owSfu,album
+96,M.I.A.,Kala,2007-08-20,Come Around,7iO8C8WokR1folp9mPdN2t,62,XL Recordings,0.851,0.852,8,-6.842,1,0.0483,2.34e-05,0.73,0.854,120.085,234173,4,False,42.0,1.0,12.0,2xoj2gYed3IYmGWn3owSfu,album
+97,M.I.A.,/\/\ /\ Y /\,2010-07-12,THE MESSAGE,03Q441rd13kJnKBpR8vGdn,37,XL Recordings,0.776,0.808,4,-7.602,0,0.156,0.794,0.304,0.102,119.973,57693,4,False,22.0,1.0,1.0,7BIbGgOmGMhLscZqowMSDV,album
+98,M.I.A.,/\/\ /\ Y /\,2010-07-12,STEPPIN UP,75sH9bA9JKUmNvkiei1TtL,37,XL Recordings,0.634,0.912,11,-3.547,0,0.184,0,0.58,0.578,140.016,241400,4,False,26.0,1.0,2.0,7BIbGgOmGMhLscZqowMSDV,album
+99,M.I.A.,/\/\ /\ Y /\,2010-07-12,XXXO,5fBx0CyspbLYEO073IHxGN,37,XL Recordings,0.678,0.953,7,-3.841,1,0.0423,0.000575,0.22,0.676,119.981,174227,4,False,32.0,1.0,3.0,7BIbGgOmGMhLscZqowMSDV,album

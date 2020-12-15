@@ -36,9 +36,8 @@ def change_dtypes(df):
     df['duration_ms'] = df.duration_ms.astype('int')
     df['popularity'] = df.popularity.astype('int')
     df['time_signature'] = df.time_signature.astype('int')
-    df['album_popularity'] = df.album_popularity.astype('int')
     df['track_number'] = df.track_number.astype('int')
-    
+
     return df
 
 def prepare_df(df):

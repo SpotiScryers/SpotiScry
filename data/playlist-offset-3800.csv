@@ -1,0 +1,101 @@
+,artist,album,release_date,track_name,track_id,album_popularity,label,danceability,energy,key,loudness,mode,speechiness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature,explicit,popularity,disc_number,track_number,album_id,album_type
+0,Trina,Diamonds,2011-03-28,Black Bird,77eiwPQ3sDECxZLa0C0n2R,20,Rockstarr Music Group,0.709,0.538,10,-13.491,0,0.107,0,0.226,0.688,140.527,288640,4,True,3.0,1.0,2.0,23e6wkwEGSHWbJtOblOkm6,album
+1,Trina,Diamonds,2011-03-28,Put Them Bottles Up,0aK8bhDrpQHBnN6W6C8JS1,20,Rockstarr Music Group,0.801,0.608,1,-10.732,1,0.234,0,0.0734,0.571,104.451,119547,4,True,2.0,1.0,3.0,23e6wkwEGSHWbJtOblOkm6,album
+2,Trina,Diamonds,2011-03-28,Ghetto,13TnT0UD2HPVOlH1rxNHHo,20,Rockstarr Music Group,0.8,0.433,11,-12.729,1,0.32,0,0.122,0.82,79.226,267320,4,True,6.0,1.0,4.0,23e6wkwEGSHWbJtOblOkm6,album
+3,Trina,Diamonds,2011-03-28,Hit It Right,6HsQfTQwkeBMkELM1mXqlU,20,Rockstarr Music Group,0.376,0.754,7,-9.201,1,0.0641,0.000125,0.319,0.343,74.995,157573,3,True,5.0,1.0,5.0,23e6wkwEGSHWbJtOblOkm6,album
+4,Trina,Diamonds,2011-03-28,Convert Me,0TQXzymHJ2ImHgSioErEIJ,20,Rockstarr Music Group,0.833,0.539,6,-13.169,1,0.423,0,0.389,0.896,148.48,219933,4,True,4.0,1.0,6.0,23e6wkwEGSHWbJtOblOkm6,album
+5,Trina,Diamonds,2011-03-28,iPhone,1U3nDHVu0qGb7lnoNCmyuz,20,Rockstarr Music Group,0.83,0.549,7,-14.631,1,0.393,0,0.194,0.728,102.282,164827,4,True,3.0,1.0,7.0,23e6wkwEGSHWbJtOblOkm6,album
+6,Trina,Diamonds,2011-03-28,Red Bottoms,5yBO38KpGgClEISvbj32zk,20,Rockstarr Music Group,0.853,0.408,2,-11.246,1,0.424,0,0.121,0.832,65.214,221442,4,True,19.0,1.0,8.0,23e6wkwEGSHWbJtOblOkm6,album
+7,Trina,Diamonds,2011-03-28,Can I,1aZHETYl9wK7Y56lRGTDOu,20,Rockstarr Music Group,0.692,0.44,8,-12.656,1,0.117,0,0.33,0.396,125.37,246280,4,True,15.0,1.0,9.0,23e6wkwEGSHWbJtOblOkm6,album
+8,Trina,Diamonds,2011-03-28,Waist Skinny,0I8Pkjegmi31LfNICzbY7O,20,Rockstarr Music Group,0.757,0.809,6,-11.148,0,0.175,0,0.445,0.689,140.427,212960,4,True,6.0,1.0,10.0,23e6wkwEGSHWbJtOblOkm6,album
+9,Trina,Diamonds,2011-03-28,Beautiful Body,5Cs1i2xeVUAzhfTZRcQ4qR,20,Rockstarr Music Group,0.742,0.524,4,-11.758,0,0.396,9.6e-05,0.267,0.239,170.62,253347,4,True,4.0,1.0,11.0,23e6wkwEGSHWbJtOblOkm6,album
+10,Trina,Diamonds,2011-03-28,Rich B*tch,53TwZ0791sDHC0yx3FGAkX,20,Rockstarr Music Group,0.725,0.508,0,-10.447,0,0.108,0,0.118,0.377,90.462,187613,4,True,4.0,1.0,13.0,23e6wkwEGSHWbJtOblOkm6,album
+11,Trina,Diamonds,2011-03-28,No More,5EUr8h6sLF3lGStCuTQubq,20,Rockstarr Music Group,0.702,0.505,8,-11.44,1,0.337,0,0.35,0.702,115.105,222493,4,True,13.0,1.0,14.0,23e6wkwEGSHWbJtOblOkm6,album
+12,Trina,Diamonds,2011-03-28,Bad B*tch,1GiTfADakUscCMH9Ggt1MN,20,Rockstarr Music Group,0.779,0.424,8,-11.282,1,0.406,0,0.187,0.325,73.613,148293,4,True,6.0,1.0,15.0,23e6wkwEGSHWbJtOblOkm6,album
+13,Trina,Diamonds,2011-03-28,I'm Known,7oP6uQbjqTqFL35sKXQ7Lj,20,Rockstarr Music Group,0.78,0.63,0,-11.067,1,0.28,0,0.193,0.852,151.463,190147,4,True,2.0,1.0,16.0,23e6wkwEGSHWbJtOblOkm6,album
+14,Trina,Diamonds,2011-03-28,Ghettto (Remix),2umYnyayoGhBEfoJeqUCP6,20,Rockstarr Music Group,0.678,0.522,11,-10.792,1,0.306,0,0.0614,0.693,158.464,236427,4,True,4.0,1.0,17.0,23e6wkwEGSHWbJtOblOkm6,album
+15,Trina,Rockstarr Royalty,2014-05-12,Intro,3Zf9tk3vIX9UQmXtP10G2n,12,Rockstarr Music Group,0.723,0.782,11,-2.27,0,0.565,0,0.099,0.626,62.322,36360,4,True,1.0,1.0,1.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+16,Trina,Rockstarr Royalty,2014-05-12,Talks,1BQYuDMFroaciJTvFt6Nkn,12,Rockstarr Music Group,0.662,0.727,6,-3.549,0,0.444,0,0.207,0.555,85.532,23534,4,True,0.0,1.0,2.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+17,Trina,Rockstarr Royalty,2014-05-12,Takin' over Ladies,3M1OvirdcIjvwoInI74RWo,12,Rockstarr Music Group,0.749,0.936,1,-2.534,0,0.316,0,0.319,0.535,112.586,221920,4,True,6.0,1.0,3.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+18,Trina,Rockstarr Royalty,2014-05-12,Party Like a Rockstar,60U22kc1yEP7KGPPKqOd4s,12,Rockstarr Music Group,0.688,0.861,6,-2.978,0,0.1,0,0.384,0.96,145.073,102320,4,True,7.0,1.0,4.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+19,Trina,Rockstarr Royalty,2014-05-12,Like That,3EVKOyLz6Re9E2d9A1WBUg,12,Rockstarr Music Group,0.763,0.707,11,-3.656,0,0.221,0,0.85,0.667,125.076,165973,4,True,3.0,1.0,5.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+20,Trina,Rockstarr Royalty,2014-05-12,Hottest Chick in the Game,1RmHEyOSvxsRPQP9qwm4oa,12,Rockstarr Music Group,0.875,0.799,0,-3.467,1,0.251,0,0.591,0.644,97.118,192253,4,True,3.0,1.0,6.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+21,Trina,Rockstarr Royalty,2014-05-12,It Aint Enough,1mK1PSdWy9F3jik7zy24B6,12,Rockstarr Music Group,0.751,0.945,11,-1.971,0,0.386,0,0.467,0.937,155.93,79813,4,True,3.0,1.0,7.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+22,Trina,Rockstarr Royalty,2014-05-12,Skit 1,2EdObJBynLrd4hzgcxEwu3,12,Rockstarr Music Group,0.635,0.618,3,-10.878,1,0.873,0,0.192,0.535,59.86,45280,3,True,1.0,1.0,8.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+23,Trina,Rockstarr Royalty,2014-05-12,Stunt,1TBW3Wx8Dib7VR2mStJ5Ft,12,Rockstarr Music Group,0.873,0.562,7,-9.025,1,0.512,0,0.127,0.658,158.006,424747,4,True,3.0,1.0,9.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+24,Trina,Rockstarr Royalty,2014-05-12,Grey Goose,49uESpdksDZZEKM2fAnl9O,12,Rockstarr Music Group,0.813,0.952,11,-1.428,1,0.348,0,0.512,0.583,89.96,201173,4,True,4.0,1.0,10.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+25,Trina,Rockstarr Royalty,2014-05-12,Lip Gloss,44K0Ib52U32Ef8jxfcP9d2,12,Rockstarr Music Group,0.651,0.9,11,-2.718,0,0.453,0,0.252,0.613,122.915,140667,5,True,3.0,1.0,11.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+26,Trina,Rockstarr Royalty,2014-05-12,"Bitch, I Don't Need You",6gAxBbhPWtsYitpOFllwfO,12,Rockstarr Music Group,0.635,0.725,4,-3.74,0,0.338,0,0.504,0.36,100.014,129760,4,True,5.0,1.0,12.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+27,Trina,Rockstarr Royalty,2014-05-12,Skit 2,0o95G9jx5D4MPepkPr4vEI,12,Rockstarr Music Group,0.429,0.912,9,-6.15,0,0.727,1.03e-05,0.543,0.462,140.667,19027,4,True,0.0,1.0,13.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+28,Trina,Rockstarr Royalty,2014-05-12,B R Right,04tzIgqYxfrW9tuHlz2ZVO,12,Rockstarr Music Group,0.612,0.922,9,-2.574,1,0.173,0,0.825,0.462,136.1,197347,4,True,6.0,1.0,14.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+29,Trina,Rockstarr Royalty,2014-05-12,Rich,3dJXdqFcdFidtb9OITc8ue,12,Rockstarr Music Group,0.777,0.877,9,-3.013,0,0.325,0,0.165,0.802,76.991,182627,4,True,1.0,1.0,15.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+30,Trina,Rockstarr Royalty,2014-05-12,Interview,4XNF6h3MPEdBhlFkci0uZj,12,Rockstarr Music Group,0.713,0.732,1,-4.064,1,0.639,0,0.178,0.839,113.271,25653,5,True,0.0,1.0,16.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+31,Trina,Rockstarr Royalty,2014-05-12,So Many Memories,7GIhsdedgMqVaoJPjC22hn,12,Rockstarr Music Group,0.973,0.676,8,-5.032,1,0.232,0,0.507,0.766,121.037,198133,4,True,3.0,1.0,17.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+32,Trina,Rockstarr Royalty,2014-05-12,Shout Out,6jZKx1SYqVyIRELwJFWrJJ,12,Rockstarr Music Group,0.783,0.716,2,-3.534,1,0.408,0,0.068,0.418,90.639,36173,4,True,1.0,1.0,18.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+33,Trina,Rockstarr Royalty,2014-05-12,Don't Go,3X66BkAfR1crZWIl1LRGTr,12,Rockstarr Music Group,0.517,0.586,7,-5.937,1,0.276,0.00234,0.619,0.364,84.839,200947,4,True,3.0,1.0,19.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+34,Trina,Rockstarr Royalty,2014-05-12,Outro,6myChYzeC1k2Crkn24uAQQ,12,Rockstarr Music Group,0.715,0.836,5,-4.057,1,0.399,0,0.533,0.94,82.128,45533,5,True,1.0,1.0,20.0,6ZtDoKrNfOFPhpOl1UoKWS,album
+35,Trina,Back to Business,2014-05-15,Intro,5byE3xnx2Mm3qKpbUjzCP3,25,Rockstarr Music Group,0.651,0.253,5,-8.593,0,0.0962,8.79e-06,0.269,0.625,92.767,54000,5,True,5.0,1.0,1.0,0HQlJ7S4N058G0eDXoLRrn,album
+36,Trina,Back to Business,2014-05-15,Bitch Bad,7C0oi3DMEmR9xPTigd6lW7,25,Rockstarr Music Group,0.729,0.873,1,-5.492,1,0.361,0,0.773,0.602,173.012,156000,4,True,22.0,1.0,2.0,0HQlJ7S4N058G0eDXoLRrn,album
+37,Trina,Back to Business,2014-05-15,Head Turner,3XfkRfFwb2V0Htu9idlK34,25,Rockstarr Music Group,0.425,0.794,8,-4.773,1,0.042,0,0.349,0.132,146.296,187973,4,True,9.0,1.0,3.0,0HQlJ7S4N058G0eDXoLRrn,album
+38,Trina,Back to Business,2014-05-15,Petty,3TcRxbo1xPJLUKoFLOEgOU,25,Rockstarr Music Group,0.775,0.632,11,-9.804,0,0.416,2.59e-06,0.0967,0.601,158.036,246000,4,True,8.0,1.0,4.0,0HQlJ7S4N058G0eDXoLRrn,album
+39,Trina,Back to Business,2014-05-15,Hell Yeah,1RzxSX8C8oKIVhhjg6ruGc,25,Rockstarr Music Group,0.757,0.513,1,-12.211,1,0.281,0,0.0771,0.314,112.013,128987,4,True,7.0,1.0,5.0,0HQlJ7S4N058G0eDXoLRrn,album
+40,Trina,Back to Business,2014-05-15,Round of Applause,6OSsJR1zl750DOrzLLzvuH,25,Rockstarr Music Group,0.71,0.597,1,-7.862,1,0.356,0,0.428,0.201,176.014,176360,4,True,11.0,1.0,6.0,0HQlJ7S4N058G0eDXoLRrn,album
+41,Trina,Back to Business,2014-05-15,I Fucks with You,79YJ1RjLZJGl8BWIHUTqSO,25,Rockstarr Music Group,0.685,0.759,1,-7.034,1,0.267,0,0.41,0.716,120.093,190480,4,True,13.0,1.0,7.0,0HQlJ7S4N058G0eDXoLRrn,album
+42,Trina,Back to Business,2014-05-15,Go Hard,3TH0WoTxTmU3u8qU7LGR7k,25,Rockstarr Music Group,0.515,0.795,7,-6.805,1,0.383,0,0.808,0.529,127.526,80000,5,True,7.0,1.0,8.0,0HQlJ7S4N058G0eDXoLRrn,album
+43,Trina,Back to Business,2014-05-15,I Want,32UiWmmfRtJLoDhJeWYEio,25,Rockstarr Music Group,0.741,0.827,9,-6.952,1,0.293,1.06e-06,0.283,0.847,141.046,300453,4,True,10.0,1.0,9.0,0HQlJ7S4N058G0eDXoLRrn,album
+44,Trina,Back to Business,2014-05-15,Show Out,1iCIjC1diCogGwKK2n1Kbk,25,Rockstarr Music Group,0.661,0.949,7,-3.393,1,0.327,1.55e-05,0.615,0.638,100.052,170747,4,True,8.0,1.0,10.0,0HQlJ7S4N058G0eDXoLRrn,album
+45,Trina,Back to Business,2014-05-15,Shit's Real,5plv8Nvj6AFrH9IjnHgUsd,25,Rockstarr Music Group,0.541,0.884,10,-4.182,0,0.37,0,0.165,0.55,185.677,188240,4,True,6.0,1.0,11.0,0HQlJ7S4N058G0eDXoLRrn,album
+46,Trina,Back to Business,2014-05-15,Supa Bad,0QBrWKq5FVy9et4wimV7Q2,25,Rockstarr Music Group,0.419,0.691,1,-10.69,1,0.358,2.49e-06,0.314,0.29,180.688,235000,4,True,8.0,1.0,12.0,0HQlJ7S4N058G0eDXoLRrn,album
+47,Trina,Back to Business,2014-05-15,Scream,48v2Gifr1O30GWrZpV3Dpf,25,Rockstarr Music Group,0.422,0.46,5,-11.299,0,0.302,0,0.122,0.666,179.758,218747,4,True,6.0,1.0,13.0,0HQlJ7S4N058G0eDXoLRrn,album
+48,Trina,Back to Business,2014-05-15,I Cheated,5n76RwU3B2jAEvjdfkixfO,25,Rockstarr Music Group,0.674,0.736,8,-8.582,0,0.328,0,0.108,0.58,162.089,212680,4,True,22.0,1.0,14.0,0HQlJ7S4N058G0eDXoLRrn,album
+49,Trina,Back to Business,2014-05-15,Come 2 Far,56xjrhovKIurJbFP1isuSb,25,Rockstarr Music Group,0.548,0.819,7,-8.008,1,0.238,7.83e-05,0.592,0.58,173.956,249600,4,True,6.0,1.0,15.0,0HQlJ7S4N058G0eDXoLRrn,album
+50,Trina,Back to Business,2014-05-15,Tic Toc,1zrO1Hwlne0wEFA39eaQHN,25,Rockstarr Music Group,0.539,0.693,1,-3.847,1,0.0519,0,0.334,0.0511,143.119,262000,4,True,8.0,1.0,16.0,0HQlJ7S4N058G0eDXoLRrn,album
+51,Trina,Back to Business,2014-05-15,I'm Back,1hLf5owH40OQ0keeMmQAx3,25,Rockstarr Music Group,0.728,0.881,11,-6.031,0,0.398,0,0.31,0.768,141.864,175693,4,True,9.0,1.0,18.0,0HQlJ7S4N058G0eDXoLRrn,album
+52,Trina,Back to Business,2014-05-15,Beam,3EnuSDjIGYmcnK35PlIJhv,25,Rockstarr Music Group,0.724,0.925,9,-3.374,1,0.253,0,0.302,0.248,131.555,230653,4,True,6.0,1.0,19.0,0HQlJ7S4N058G0eDXoLRrn,album
+53,Trina,Back to Business,2014-05-15,Thinking of You,26xlyNWOt2qqc7gYb28kj2,25,Rockstarr Music Group,0.582,0.559,10,-8.729,0,0.149,0,0.0524,0.267,88.891,208667,4,True,9.0,1.0,20.0,0HQlJ7S4N058G0eDXoLRrn,album
+54,Trina,Who's Bad,2014-05-15,Who's Bad,62rBZgjldDHiqrCsVo1I7k,26,Rockstarr Music Group,0.912,0.749,4,-8.768,0,0.236,0.00015,0.201,0.768,125.019,236454,4,True,9.0,1.0,1.0,5RloAkzZVCv8axh4yiNqZ4,album
+55,Trina,Who's Bad,2014-05-15,That's My Attitude,6mYsIueiNpvLmBt8j6hbT5,26,Rockstarr Music Group,0.837,0.673,11,-8.848,1,0.142,0,0.0855,0.952,150.035,225814,4,True,12.0,1.0,2.0,5RloAkzZVCv8axh4yiNqZ4,album
+56,Trina,Who's Bad,2014-05-15,Big Spenda Freestyle,3sPcKGSfSp08gF1PfCBfys,26,Rockstarr Music Group,0.798,0.844,5,-4.872,0,0.339,0,0.276,0.949,142.025,131734,4,True,5.0,1.0,4.0,5RloAkzZVCv8axh4yiNqZ4,album
+57,Trina,Who's Bad,2014-05-15,Baddest of All Times,1nKYSPlkR7joRyqnEd1kll,26,Rockstarr Music Group,0.84,0.606,1,-8.72,1,0.341,0,0.048,0.529,88.453,227081,4,True,9.0,1.0,5.0,5RloAkzZVCv8axh4yiNqZ4,album
+58,Trina,Who's Bad,2014-05-15,Superstarr,6mAzKXBH55Bl14YciRXEZm,26,Rockstarr Music Group,0.929,0.918,11,-9.003,0,0.12,3.59e-05,0.299,0.674,118.063,89774,4,True,3.0,1.0,6.0,5RloAkzZVCv8axh4yiNqZ4,album
+59,Trina,Who's Bad,2014-05-15,Stop Hatin',67MH3aeLssqDAPDJWrqVnR,26,Rockstarr Music Group,0.901,0.622,7,-12.191,1,0.599,0,0.371,0.733,83.965,139147,4,True,5.0,1.0,7.0,5RloAkzZVCv8axh4yiNqZ4,album
+60,Trina,Who's Bad,2014-05-15,Killin' You Hoes,3lPFosxsxPWkjKLBstCBZn,26,Rockstarr Music Group,0.81,0.657,1,-9.607,1,0.335,0,0.107,0.837,90.992,212867,4,True,9.0,1.0,8.0,5RloAkzZVCv8axh4yiNqZ4,album
+61,Trina,Who's Bad,2014-05-15,Clear It Out,44u2t5x7Z3jvHHzZZrgiyO,26,Rockstarr Music Group,0.905,0.795,2,-8.182,1,0.457,5.94e-06,0.0398,0.835,150.09,184787,4,True,4.0,1.0,9.0,5RloAkzZVCv8axh4yiNqZ4,album
+62,Trina,Who's Bad,2014-05-15,Venus vs. Mars - Remix,77bWaYtD017U1v4DVI3vNn,26,Rockstarr Music Group,0.651,0.38,5,-11.731,0,0.31,2.93e-05,0.137,0.178,97.952,127467,4,True,5.0,1.0,10.0,5RloAkzZVCv8axh4yiNqZ4,album
+63,Trina,Who's Bad,2014-05-15,Get Ya Money Girl,2Rd0Ll44Nei2V7BVauxcKT,26,Rockstarr Music Group,0.704,0.588,6,-9.894,0,0.221,0,0.427,0.528,156.817,199907,4,True,4.0,1.0,12.0,5RloAkzZVCv8axh4yiNqZ4,album
+64,Trina,Who's Bad,2014-05-15,Get Dat Money,18At6hbIGKHrTpvpZV7VmJ,26,Rockstarr Music Group,0.805,0.515,1,-9.237,1,0.0731,0.0299,0.455,0.15,97.997,206321,4,True,5.0,1.0,13.0,5RloAkzZVCv8axh4yiNqZ4,album
+65,Trina,Who's Bad,2014-05-15,Bout It Girl,7LpK3MbGZIWytNzwwKNdQd,26,Rockstarr Music Group,0.831,0.609,2,-10.807,1,0.54,0,0.15,0.625,80.059,233747,4,True,5.0,1.0,14.0,5RloAkzZVCv8axh4yiNqZ4,album
+66,Trina,Who's Bad,2014-05-15,Tip of My Tonque,4pM7kkCHK9s5MZ5CBBaYHZ,26,Rockstarr Music Group,0.657,0.857,6,-4.529,0,0.297,0,0.31,0.793,137.959,285121,4,True,11.0,1.0,15.0,5RloAkzZVCv8axh4yiNqZ4,album
+67,Trina,Who's Bad,2014-05-15,Wetter,5ePqUk9GJslfcPghScG1rT,26,Rockstarr Music Group,0.796,0.634,7,-10.324,1,0.312,0,0.194,0.774,120.057,121774,4,True,18.0,1.0,16.0,5RloAkzZVCv8axh4yiNqZ4,album
+68,Trina,Who's Bad,2014-05-15,Like That,0nNrY0f90WVNRuFByJSg07,26,Rockstarr Music Group,0.693,0.642,0,-8.652,1,0.175,0,0.312,0.907,155.031,256227,4,True,7.0,1.0,17.0,5RloAkzZVCv8axh4yiNqZ4,album
+69,Trina,Who's Bad,2014-05-15,She Don't Like Me,1GxLNehxvAQ5gvx4GhSsvs,26,Rockstarr Music Group,0.771,0.798,7,-4.057,1,0.303,0,0.465,0.831,154.97,196921,4,True,3.0,1.0,18.0,5RloAkzZVCv8axh4yiNqZ4,album
+70,Trina,Who's Bad,2014-05-15,Get Ya Money up Freestyle,7JDzmC6mJ7x4reyiOIqXSl,26,Rockstarr Music Group,0.742,0.549,10,-11.12,0,0.26,0.00039,0.162,0.544,192.908,63761,4,True,4.0,1.0,19.0,5RloAkzZVCv8axh4yiNqZ4,album
+71,Trina,Who's Bad,2014-05-15,Run This Town,7i7cj3D09PcfYQ0eHaNS9W,26,Rockstarr Music Group,0.558,0.851,1,-5.685,1,0.229,0,0.3,0.512,84.844,176667,4,True,14.0,1.0,20.0,5RloAkzZVCv8axh4yiNqZ4,album
+72,Trina,Who's Bad,2014-05-15,Break Up,78RKpvTXV2Nvcofmab74Lp,26,Rockstarr Music Group,0.694,0.439,2,-10.671,1,0.739,0,0.311,0.53,146.368,206441,4,True,7.0,1.0,21.0,5RloAkzZVCv8axh4yiNqZ4,album
+73,Trina,Who's Bad,2014-05-15,We Don't Love Em,0DIiOzp3RpBRkKMuB5dsY8,26,Rockstarr Music Group,0.854,0.868,6,-6.228,0,0.244,0,0.0978,0.776,105.017,169894,4,True,3.0,1.0,22.0,5RloAkzZVCv8axh4yiNqZ4,album
+74,Trina,Who's Bad,2014-05-15,Thug Life,1ELdVw53ZLaveGkIBmLWiu,26,Rockstarr Music Group,0.792,0.416,8,-9.804,1,0.286,0,0.241,0.578,100.02,282214,4,True,5.0,1.0,23.0,5RloAkzZVCv8axh4yiNqZ4,album
+75,Trina,Who's Bad,2014-05-15,My Testimony,2x8iKphyz84xUv1Lw2KklE,26,Rockstarr Music Group,0.816,0.664,10,-8.651,0,0.35,0,0.259,0.481,88.003,265401,4,True,3.0,1.0,24.0,5RloAkzZVCv8axh4yiNqZ4,album
+76,Trina,Dynasty6,2016-12-03,First Place,0hSjVXmZ6MypIbZUZZYWxD,17,Rockstarr Music Group,0.906,0.662,9,-7.632,0,0.359,0,0.486,0.56,125.829,108400,4,True,14.0,1.0,1.0,75I8PJQVJoQu1BXcRgq5ln,album
+77,Trina,Dynasty6,2016-12-03,Hold You Down,4fefDvQ1uLWFpN7vYJiR8C,17,Rockstarr Music Group,0.828,0.365,1,-12.009,1,0.0747,0.00113,0.0748,0.257,99.959,220080,4,True,9.0,1.0,2.0,75I8PJQVJoQu1BXcRgq5ln,album
+78,Trina,Dynasty6,2016-12-03,Watch This,7IXgNm7CetxOWQfkmQllPg,17,Rockstarr Music Group,0.862,0.599,8,-7.261,1,0.199,0,0.138,0.104,80.997,195053,4,True,12.0,1.0,3.0,75I8PJQVJoQu1BXcRgq5ln,album
+79,Trina,Dynasty6,2016-12-03,No Games,6bSYKTHQyJSJhYUK4ox7ow,17,Rockstarr Music Group,0.592,0.792,9,-6.424,0,0.554,0,0.266,0.279,150.365,207533,4,True,10.0,1.0,6.0,75I8PJQVJoQu1BXcRgq5ln,album
+80,Trina,Dynasty6,2016-12-03,Rockstarr,7fkzbEY5WCksCEAZ28vFt8,17,Rockstarr Music Group,0.762,0.88,1,-5.114,1,0.263,0,0.358,0.447,90.295,226027,4,True,7.0,1.0,7.0,75I8PJQVJoQu1BXcRgq5ln,album
+81,Trina,Blue Magic,2018-10-19,Change the Vibe,6GnWQet1B1mTR6XAh1dKkU,44,Rockstarr Music Group,0.875,0.735,6,-8.822,1,0.261,0,0.552,0.962,150.132,146756,4,True,19.0,1.0,2.0,06NRbPzrE1fhJsay2ikpW9,album
+82,Trina,Blue Magic,2018-10-19,Thug Song,5DuU9I9GmnJ4TuLlpB5NMm,44,Rockstarr Music Group,0.682,0.569,4,-10.947,0,0.331,0,0.13,0.447,125.945,216242,3,True,19.0,1.0,3.0,06NRbPzrE1fhJsay2ikpW9,album
+83,Trina,Blue Magic,2018-10-19,Chandelier,50qmkMNEbLOTGydwdYtS8G,44,Rockstarr Music Group,0.751,0.534,1,-7.806,1,0.158,1.68e-06,0.242,0.214,84.981,144039,4,True,26.0,1.0,4.0,06NRbPzrE1fhJsay2ikpW9,album
+84,Trina,Blue Magic,2018-10-19,She Bad,4L6TczJg8rF0kCBoGxMIuS,44,Rockstarr Music Group,0.758,0.864,11,-7.235,1,0.115,3.5e-06,0.252,0.946,99.026,155220,4,True,17.0,1.0,5.0,06NRbPzrE1fhJsay2ikpW9,album
+85,Trina,Blue Magic,2018-10-19,Redemption,4rx40VUjIU1hGAQ4mkH7xe,44,Rockstarr Music Group,0.65,0.635,6,-7.652,0,0.049,0,0.162,0.15,103.876,226351,4,True,26.0,1.0,6.0,06NRbPzrE1fhJsay2ikpW9,album
+86,Trina,Blue Magic,2018-10-19,Tf U Think,1wzp6pTn4U5irlyqbx6is1,44,Rockstarr Music Group,0.812,0.631,9,-7.363,1,0.299,0,0.197,0.502,78.0,188761,4,True,24.0,1.0,7.0,06NRbPzrE1fhJsay2ikpW9,album
+87,Junglepussy,Jp4,2020-10-23,Bad News,3hoShMjPjbfYH2XKUaQ1sv,47,Jagjaguwar,0.387,0.745,0,-3.941,1,0.0445,0.000101,0.0986,0.302,77.49,131598,4,False,35.0,1.0,1.0,5agYNY4IFgl4yQ3gIGLW65,album
+88,Junglepussy,Jp4,2020-10-23,Main Attraction,3REPPuvF0f1r5IaOoEfvTM,47,Jagjaguwar,0.703,0.735,6,-3.124,0,0.0747,0,0.0767,0.553,135.93,137099,4,False,40.0,1.0,2.0,5agYNY4IFgl4yQ3gIGLW65,album
+89,Junglepussy,Jp4,2020-10-23,Telepathy,7k0dWmRFkrNKenderATxL9,47,Jagjaguwar,0.745,0.739,11,-6.065,1,0.0667,0.000863,0.263,0.535,136.07,205257,4,False,35.0,1.0,3.0,5agYNY4IFgl4yQ3gIGLW65,album
+90,Junglepussy,Jp4,2020-10-23,Morning Rock,5G8kzn6orUSqJuIO56bbl7,47,Jagjaguwar,0.43,0.795,2,-5.017,0,0.262,0,0.226,0.531,93.812,223436,3,False,35.0,1.0,4.0,5agYNY4IFgl4yQ3gIGLW65,album
+91,Junglepussy,Jp4,2020-10-23,Out My Window (feat. Ian Isiah),78Vakr7uFSVeJ3KPDQHNsD,47,Jagjaguwar,0.522,0.53,8,-7.613,1,0.099,0,0.107,0.521,134.71,255170,4,False,35.0,1.0,5.0,5agYNY4IFgl4yQ3gIGLW65,album
+92,Junglepussy,Jp4,2020-10-23,Spiders,3c7Fz5gSqqYMc81pv79AGT,47,Jagjaguwar,0.644,0.61,9,-7.951,0,0.0754,0.000104,0.126,0.149,74.992,151550,4,False,38.0,1.0,6.0,5agYNY4IFgl4yQ3gIGLW65,album
+93,Junglepussy,Jp4,2020-10-23,What You Want,0uRzWL7rqMsOTNOhzmdMGF,47,Jagjaguwar,0.352,0.772,7,-4.336,1,0.101,2.1e-05,0.17,0.36,209.476,183529,3,False,33.0,1.0,7.0,5agYNY4IFgl4yQ3gIGLW65,album
+94,Junglepussy,Jp4,2020-10-23,No Band Aid,5XlF3VXHyBDxMEoAHh2IU0,47,Jagjaguwar,0.706,0.799,10,-3.298,0,0.071,0.129,0.194,0.423,120.026,184000,4,False,32.0,1.0,10.0,5agYNY4IFgl4yQ3gIGLW65,album
+95,Junglepussy,Jp3,2018-05-11,Long Way Home,0SKIZK6OnhJpGRFA7vtPjw,55,Junglepussy,0.793,0.624,5,-5.147,1,0.234,2.28e-06,0.173,0.355,116.0,185875,4,True,30.0,1.0,3.0,0y90zPTTH3i18Qerg2mB2e,album
+96,Junglepussy,Jp3,2018-05-11,Ocean Floor,3mDPJBjWf7v6bjzROOKQzs,55,Junglepussy,0.765,0.68,7,-4.144,0,0.113,0,0.129,0.37,128.137,196938,4,True,31.0,1.0,6.0,0y90zPTTH3i18Qerg2mB2e,album
+97,Junglepussy,Jp3,2018-05-11,Trader Joe,68UwqWt98BW1QdDnGV9DO1,55,Junglepussy,0.872,0.541,0,-6.932,1,0.0629,1.79e-06,0.0617,0.589,133.005,188917,4,True,59.0,1.0,9.0,0y90zPTTH3i18Qerg2mB2e,album
+98,Junglepussy,Jp3,2018-05-11,Showers,1V5ntTvw30u6d29r8wbGFz,55,Junglepussy,0.489,0.6,0,-6.537,0,0.404,0,0.256,0.523,73.38,150295,4,True,36.0,1.0,10.0,0y90zPTTH3i18Qerg2mB2e,album
+99,Junglepussy,Pregnant with Success,2015-11-17,Nothing for Me,6xOsBslfYA01WRCqVJeMoS,35,DistroKid.com,0.593,0.83,6,-4.952,1,0.367,0,0.0941,0.827,148.184,202625,4,True,25.0,1.0,3.0,46xmphHLldxkMVx79bd7D6,album

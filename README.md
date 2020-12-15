@@ -60,7 +60,29 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 ### Hypotheses
 ## Project Steps
 ### Acquire
+Data was acquired from Spotify API using the spotipy library. Going to this website https://developer.spotify.com/dashboard/login lets you create a spotify web app that will give you a client id and client secret. Create an env.py file in your working directory and save this code after swaping out your individual client id and secret:  
+
+~~~
+cid = YOURCLIENTID
+c_secret = YOURCLIENTSECRET
+~~~
+
+This will allow you to use the create_spotipy_client function to create your own spotipy client that will access the API. The dataframe is saved as a csv file and has around 5900 observations, otherwise in the acquire.py file there is function for grabbing the entire capstone playlist as well as a function for acquiring your additional playlists should you choose. There are 24 columns in the original data frame, this ranges from track and album metadata to audio features for that track. There are very few nulls which have been marked as null in the data acquisition function for ease of removal later in prepare.
 ### Prepare
+Functions to prepare the dataframe are stored in two seperate files depending on their purpose, prepare.py and preprocessing.py:  
+
+**prepare.py:** Functions for cleaning and ordering data
+* release dates that only specify the year are set to '01-01' for month and day
+* nulls are dropped
+* set track id to index
+* change dtypes to correct type
+
+**preprocessing.py:** Functions for adding features we found interesting / modyifying data for ease of use in exploration
+* convert track length from ms to seconds & minutes
+* lowercase artist, album, and track name
+* create column for year, month, and day for release date
+* bin release year by decade
+
 ### Explore
 ### Model
 ### Conclusions
