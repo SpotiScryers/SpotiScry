@@ -256,3 +256,64 @@ def create_clusters(X_train_scaled, X_validate_scaled, X_test_scaled, features, 
     X_test_scaled = pd.concat([X_test_scaled,dummies3], axis=1)
 
     return X_train_scaled, X_validate_scaled, X_test_scaled
+
+################################################# Create Top Ten Labels Feature #################################################
+
+def get_top_ten_labels(df):
+    # Create a dataframe of the mean of popularity and label count grouped by label
+    biggest_labels = df.groupby('label').popularity.agg(['mean', 'count']).sort_values(by=['count', 'mean'], ascending=False).head(20)
+    # Create a list of the top ten labels by popularity
+    top_ten_labels = list(biggest_labels.sort_values(by='mean', ascending=False).head(10).index)
+    # Make a pattern by joining every label in top_ten_labels
+    pattern = '|'.join(top_ten_labels)
+    # Make new column with boolean variable for if the label is contained in the pattern
+    df['top_ten_label'] = df.label.str.contains(pattern)
+    # Convert boolean to int
+    df['top_ten_label'] = df.top_ten_label.astype('int')
+    return df
+
+<<<<<<< HEAD
+################################################# Create Record Label Features #################################################
+
+def get_labels_features(df):
+    # Create a dataframe of the mean of popularity and label count grouped by label
+    biggest_labels = df.groupby('label').popularity.agg(['mean', 'count']).sort_values(by=['count', 'mean'], ascending=False).head(20)
+    # Create a list of the top/bottom ten/five labels by popularity
+    top_ten_labels = list(biggest_labels.sort_values(by='mean', ascending=False).head(10).index)
+    top_five_labels = list(biggest_labels.sort_values(by='mean', ascending=False).head(5).index)
+    worst_ten_labels = list(biggest_labels.sort_values(by='mean').head(10).index)
+    worst_five_labels = list(biggest_labels.sort_values(by='mean').head(5).index)
+    # Make a pattern by joining every label in our features
+    pattern1 = '|'.join(top_ten_labels)
+    pattern2 = '|'.join(top_ten_labels)
+    pattern3 = '|'.join(top_ten_labels)
+    pattern4 = '|'.join(top_ten_labels)
+    # Make new column with boolean variable for if the label is contained in the pattern
+    df['top_ten_label'] = df.label.str.contains(pattern1)
+    df['top_five_label'] = df.label.str.contains(pattern1)
+    df['worst_ten_label'] = df.label.str.contains(pattern1)
+    df['worst_five_label'] = df.label.str.contains(pattern1)
+    # Convert boolean to int
+    df['top_ten_label'] = df.top_ten_label.astype('int')
+    df['top_five_label'] = df.top_five_label.astype('int')
+    df['worst_ten_label'] = df.worst_ten_label.astype('int')
+    df['worst_five_label'] = df.worst_five_label.astype('int')
+=======
+def modeling_prep():
+    
+    df = pd.read_csv('full-playlist.csv', index_col=0)
+    # handle nulls in release data
+    df['release_date'] = np.where(df['release_date'].str.len()==4, df.release_date.astype(str) + '-01-01', df['release_date'])
+    # drop observations that contain nulls
+    df = df.dropna()
+    df = encode_features(df)
+    df = get_top_ten_labels(df)
+
+    album_dummies = pd.get_dummies(df.album_type, drop_first=True)
+    df = pd.concat([df, album_dummies], axis=1)
+    df[['compilation', 'single']]= df[['compilation', 'single']].astype('int')
+
+    df = df.drop(columns=['album_popularity','label', 'artist', 
+                        'album', 'release_date', 'track_name', 'album_id', 'album_type'])
+>>>>>>> c20d0063909abefdebe3ba55aa95792fb1f63eed
+    return df
