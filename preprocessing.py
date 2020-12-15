@@ -99,14 +99,14 @@ def spotify_split(df, target):
     # first, since the target is a continuous variable and not a categorical one,
     # in order to use stratification, we need to turn it into a categorical variable with binning.
     bin_labels_5 = ['Low', 'Moderately Low', 'Moderate', 'Moderately High', 'High']
-    df['popularity_bin'] = pd.qcut(df['popularity'], q=5, precision=0, labels=bin_labels_5)
+    df['pop_strat_bin'] = pd.qcut(df['popularity'], q=5, precision=0, labels=bin_labels_5)
 
     # split df into test (15%) and train_validate (85%)
-    train_validate, test = train_test_split(df, test_size=.15, stratify=df['popularity_bin'], random_state=666)
+    train_validate, test = train_test_split(df, test_size=.15, stratify=df['pop_strat_bin'], random_state=666)
 
     # drop column used for stratification
-    train_validate = train_validate.drop(columns=['popularity_bin'])
-    test = test.drop(columns=['popularity_bin'])
+    train_validate = train_validate.drop(columns=['pop_strat_bin'])
+    test = test.drop(columns=['pop_strat_bin'])
 
     # split train_validate off into train (82.35% of 85% = 70%) and validate (17.65% of 85% = %15)
     train, validate = train_test_split(train_validate, test_size=.1765, random_state=666)
