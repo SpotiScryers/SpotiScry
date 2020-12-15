@@ -56,16 +56,15 @@ def get_baseline_metrics(y_tr):
     bl_train_rmse = round(sqrt(mean_squared_error(y_tr, np.full(len(y_tr), bl))), 6)
     # prints the baseline rmse
     print('RMSE (Root Mean Square Error) of Baseline on train data:\n', bl_train_rmse)
-
     return bl, bl_train_rmse
 
 def linear_regression_model(X_tr, y_tr, X_v, y_v, **kwargs):
-     '''
+    '''
     This function runs the ols model on train and validate data
     with the option to include key word arguments
     '''
     # create ols model
-    lm = LinearRegression(**kwargs)
+    lm = LinearRegression(**kwargs) 
     # fit the model to train data
     lm.fit(X_tr, y_tr)
     # predict the popularity on the train data
@@ -88,6 +87,7 @@ def lasso_lars(X_tr, y_tr, X_v, y_v, X_te, y_te, **kwargs):
     '''
     # create lasso lars model
     lars = LassoLars(**kwargs)
+    # fit the model to train data
     lars.fit(X_tr, y_tr)
     # fit the model to train data
     lars_pred = lars.predict(X_tr)
@@ -107,7 +107,7 @@ def lasso_lars(X_tr, y_tr, X_v, y_v, X_te, y_te, **kwargs):
     return  lars_rmse, lars_rmse_v, lars_rmse_t
 
 def polynomial_regression(X_tr, y_tr, X_v, y_v, dstring, **kwargs):
-     '''
+    '''
     This function runs the polynomial features algorithm with a 
     linear regression model on train, validate, and test data 
     with the option to include key word arguments.
@@ -136,7 +136,7 @@ def polynomial_regression(X_tr, y_tr, X_v, y_v, dstring, **kwargs):
     return lm_sq_rmse, lm_sq_rmse_v
 
 def evaluate_df(bl_train_rmse, lm_rmse, lars_rmse, lars_rmse_v, lars_rmse_t, lm_sq_rmse, lm_sq_rmse_v, lm_cb_rmse, lm_cb_rmse_v):
-      '''
+    '''
     This function creates a dataframe with rmse as the evaluating metric for 
     the models we used. Columns are the datasets' rmse assessed for each model
     '''
