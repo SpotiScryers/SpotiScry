@@ -304,7 +304,7 @@ def get_labels_features(df):
 
 def modeling_prep():
     
-    df = pd.read_csv('full-playlist.csv', index_col=0)
+    df = pd.read_csv('data/full-playlist.csv', index_col=0)
     # handle nulls in release data
     df['release_date'] = np.where(df['release_date'].str.len()==4, df.release_date.astype(str) + '-01-01', df['release_date'])
     # drop observations that contain nulls
