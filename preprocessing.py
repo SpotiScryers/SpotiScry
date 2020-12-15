@@ -327,3 +327,43 @@ def modeling_prep():
                         'release_year', 'release_month', 'release_day', 'duration_minutes', 
                         'duration_seconds'])
     return df
+
+def select_kbest(X, y, n):
+    '''
+    This function creates a list of n features which the
+    select k best algorithm determines will perform best
+    on a model
+    '''
+    from sklearn.feature_selection import SelectKBest, f_regression
+    # create the skb object and fit to the data
+    f_selector = SelectKBest(f_regression, k=n).fit(X, y)
+    # create an array
+    X_reduced = f_selector.transform(X)
+    # get the feature support boolean mask list 
+    f_support = f_selector.get_support()
+    # reduce the dataframe to just those features and 
+    # create list of features
+    f_feature = X.iloc[:,f_support].columns.tolist()
+    return f_feature
+
+def rfe(X, y, n):
+    '''
+    This function creates a list of n features which the
+    recursive feature elimination algorithm determines will 
+    perform best on a model
+    '''
+    from sklearn.feature_selection import RFE
+    from sklearn.linear_model import LinearRegression
+    # create the lr model object
+    lm = LinearRegression()
+    # create the rfe object
+    rfe = RFE(lm, n)
+    # fit and transform to the data
+    X_rfe = rfe.fit_transform(X, y)
+    # get the feature support boolean mask list
+    mask = rfe.support_
+    # reduce the dataframe to just those features
+    X_reduced_scaled_rfe = X.iloc[:,mask]
+    # create list of features
+    f_feature = X_reduced_scaled_rfe.columns.tolist()
+    return f_feature
