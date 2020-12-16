@@ -47,7 +47,7 @@ def OLS_model(X, y, X_v, y_v):
 
 def get_baseline_metrics(y_tr):
     '''
-    This function creates the variables to reurn the mean for popularity, and the rmse 
+    This function creates the variables to return the mean for popularity, and the rmse 
     of the train data. It also prints out the rmse
     '''
     # set the baseline variable to the mean of train popularity
