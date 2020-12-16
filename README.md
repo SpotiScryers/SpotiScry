@@ -31,6 +31,7 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 
 ### Acknowledgments
 * [Continuous data stratification](https://danilzherebtsov.medium.com/continuous-data-stratification-c121fc91964b) by Danil Zherebtsov
+* [Using Spotipy Library](https://towardsdatascience.com/how-to-create-large-music-datasets-using-spotipy-40e7242cc6a6) by Max Hilsdorf
 
 ## Data Dictionary
 | Feature                | Description                                                                                                                                                                                                                                                                                          |
