@@ -11,12 +11,12 @@ import matplotlib as mpl
 import seaborn as sns
 from cycler import cycler
 # default viz size settings
-sns.set(rc={'figure.figsize':(12, 9)})
-sns.set_context("talk", rc={"font.size":14,"axes.titlesize":16,"axes.labelsize":12}) 
-plt.rc('figure', figsize=(12, 9))
-plt.rc('font', size=14)
+sns.set(rc={'figure.figsize':(14, 10)})
+sns.set_context("talk", rc={"font.size":14,"axes.titlesize":18,"axes.labelsize":14}) 
+plt.rc('figure', figsize=(14, 10))
+plt.rc('font', size=12)
 mpl.rcParams['font.size'] = 14
-mpl.rcParams['figure.figsize'] = 12, 9
+mpl.rcParams['figure.figsize'] = 14, 10
 mpl.rcParams['lines.linewidth'] = 2
 mpl.rcParams['lines.linestyle'] = '--'
 mpl.rcParams['axes.prop_cycle'] = cycler(color=['deepskyblue', 'firebrick', 'darkseagreen', 'violet'])
@@ -25,8 +25,10 @@ def explicit_viz(df):
     '''
     This function produces a swarm plot on explicit tracks' and non-explicit tracks' popularity.
     '''
-    print('Does a track being explicit or not correlate with its popularity?')
+    #print('Does a track being explicit or not correlate with its popularity?')
     sns.catplot(x="explicit", y="popularity", kind="swarm", data=df, height=8, aspect=1)
+    plt.title(label="Does a track being explicit or not correlate with its popularity?")
+    plt.show()
 
 def explicit_ttest(df, alpha=0.05):
     '''
@@ -77,3 +79,18 @@ def explicit_ttest(df, alpha=0.05):
     print('\n---\n')
           
     print('mean of non-explicit songs:', not_explicit_sample.mean(), '\nmean of explicit songs:', explicit_sample.mean())
+
+def corr_heatmap(train):
+    '''
+    This function creates a heatmap of the correlation of all features.
+    Takes in a DataFrame as an argument.
+    '''
+    # heatmap time!
+    heatmap_data = train
+    corr = heatmap_data.corr()
+    mask = np.triu(np.ones_like(corr, dtype=bool))
+    ax = sns.heatmap(corr, mask=mask, center=0, cmap=sns.diverging_palette(95, 220, n=250, s=93, l=35), square=True) 
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=45, horizontalalignment='right')
+    ax.set_yticklabels(ax.get_yticklabels(), rotation=0, horizontalalignment='right')
+    plt.title('Which features have significant correlation?')
+    ax
