@@ -16,7 +16,7 @@ def get_model_features(df):
     '''
     This function takes in a DataFrame and returns a DataFrame with features to use in predictive modeling.
     '''
-    df = df.drop(columns=['artist', 'album', 'release_date', 'track_name'])
+    df = df.drop(columns=['artist', 'album', 'release_date', 'track_name', 'label', 'album_popularity', 'album_id', 'album_type', 'release_year', 'release_month', 'release_day', 'duration_ms', 'duration_minutes'])
     return df
 
 def OLS_model(X, y, X_v, y_v):
