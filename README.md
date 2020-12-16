@@ -126,11 +126,13 @@ During exploration we looked at these features:
 
 ### Model
 First we made a baseline model to compare our model performances. The baseline was based on the average popularity for a track in our train split, which means our baseline prediction came out to a popularity of 38. The baseline model had an RMSE of 22.8 on the train split. We created various regression models and fit to the train data.  
+
 **The models evaluated on train were:**
 * OLS Linear Regression
 * LASSO + LARS
 * Polynomial Squared Linear Regression
-* Polynomial Cubed Linear Regression
+* Polynomial Cubed Linear Regression  
+
 **Models evaluated on validate were:**
 * Polynomial Cube
 * Polynomial Squared
