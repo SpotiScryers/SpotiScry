@@ -98,3 +98,68 @@ def corr_heatmap(train):
     ax.set_yticklabels(ax.get_yticklabels(), rotation=0, horizontalalignment='right')
     plt.title('Which features have significant linear correlation?')
     ax
+
+def danceability_viz(train):
+    '''
+    Produces visualizations that answer the question:
+    Is there a difference in mean popularity across dancebility bins?
+    '''
+    # First Viz
+    # visualizing each observation by release date and popularity
+    plt.figure(figsize=(12,6))
+
+    sns.scatterplot(x=train.danceability, y=train.popularity)
+    # reference line for overall popularity average
+    plt.axhline(train.popularity.mean(),linestyle='-',label='Train Popularity Average', color='black')
+    plt.axvline(train.danceability.mean(), linestyle='--',label='Train Danceability Average', color='black')
+
+    plt.title('Danceability vs. Popularity', size=15)
+
+    plt.legend(bbox_to_anchor=(1,1), loc="upper left")
+    plt.tight_layout()
+    plt.show()
+
+    # line break
+    print("\n")
+
+    # Second Viz
+    # bin danceability for better visualizing
+    train['dance_bins'] = pd.qcut(x=train.danceability, q=3, labels=['low','medium','high'])
+
+    # to plot reference line of overall train average popularity
+    popularity_rate = train.popularity.mean()
+
+    plt.figure(figsize=(12,6))
+
+    # plots the average of each features subgroups as bar plots
+    sns.barplot('popularity', 'dance_bins', data=train, alpha=.8)
+    plt.xlabel('')
+    plt.ylabel('Danceability Bins', size=13)
+    plt.title('Popularity Rate by Danceability', size=16)
+    plt.axvline(popularity_rate, ls='--', color='grey', label='Overall Average')
+
+    plt.legend(bbox_to_anchor=(1,1), loc="upper left")
+    plt.tight_layout()
+    plt.show()
+
+def release_dates_viz(train):
+    ''''
+    Produces visualizations that answer the question:
+    Does a track's release year, release month, or release day have an impact on its popularity?
+    '''
+    # visualizing average popularity by each features category
+    features = ['release_year', 'release_month', 'release_day']
+
+    # to plot reference line of overall train average popularity
+    avg_popularity = train.popularity.mean()
+
+    # plots the average of each features subgroups as bar plots
+    _, ax = plt.subplots(nrows=3, ncols=1, figsize=(16, 12), sharey=True)
+    for i, feature in enumerate(features):
+        
+        sns.barplot(feature, 'popularity', data=train, ax=ax[i], alpha=.8)
+        ax[i].set_xlabel('')
+        ax[i].set_ylabel('Popularity Level', size=13)
+        ax[i].set_title(feature, size=16)
+        ax[i].axhline(avg_popularity, ls='--', color='grey')
+        plt.tight_layout()
