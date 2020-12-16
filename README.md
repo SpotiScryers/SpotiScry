@@ -127,7 +127,7 @@ During exploration we looked at these features:
 ### Model
 ### Conclusions
 ## How to Reproduce
-1. ~Read through the README.md file~:white_check_mark:  
+1. ~Read through the README.md file~ :white_check_mark:  
 2. Download acquire.py, prepare.py, preprocessing.py, and data folder.
 3. If you don't have spotipy installed run this in your terminal: ~~~pip install spotipy~~~  
 4. Login/Sign up at https://developer.spotify.com/dashboard/login to create a Spotify webapp that'll give you your client id and client secret.
