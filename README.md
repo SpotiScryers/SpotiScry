@@ -172,7 +172,6 @@ c_secret = YOURCLIENTSECRET
 ### Tools & Requirements
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="137.5" height="20"><linearGradient id="smooth" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="round"><rect width="137.5" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#round)"><rect width="87.4" height="20" fill="#555"/><rect x="87.4" width="50.1" height="20" fill="#007ec6"/><rect width="137.5" height="20" fill="url(#smooth)"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110"><text x="447.0" y="150" fill="#010101" fill-opacity=".3" transform="scale(0.1)" textLength="774.0" lengthAdjust="spacing">python library</text><text x="447.0" y="140" transform="scale(0.1)" textLength="774.0" lengthAdjust="spacing">python library</text><text x="1114.5" y="150" fill="#010101" fill-opacity=".3" transform="scale(0.1)" textLength="401.0" lengthAdjust="spacing">pandas</text><text x="1114.5" y="140" transform="scale(0.1)" textLength="401.0" lengthAdjust="spacing">pandas</text></g></svg>
 ## License
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 ## Creators
