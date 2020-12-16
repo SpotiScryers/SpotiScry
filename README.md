@@ -125,8 +125,35 @@ During exploration we looked at these features:
 * danceability
 
 ### Model
-### Conclusions
-## How to Reproduce
+First we made a baseline model to compare our model performances. The baseline was based on the average popularity for a track in our train split, which means our baseline prediction came out to a popularity of 38. The baseline model had an RMSE of 22.8 on the train split. We created various regression models and fit to the train data.  
+**The models evaluated on train were:**
+* OLS Linear Regression
+* LASSO + LARS
+* Polynomial Squared Linear Regression
+* Polynomial Cubed Linear Regression
+**Models evaluated on validate were:**
+* Polynomial Cube
+* Polynomial Squared
+* LASSO + LARS
+**Final Model:**  
+LASSO + LARS was our final model we performed on test, it was beaten early on in train by the other two but proved to be not overfit unlike the polynomial squared/cubed regressions.  
+
+| Model          | Train RMSE      | Validate RMSE    | Test RMSE      |
+|----------------|-----------------|------------------|----------------|
+| Poly^3 LR      | 19.836287       | 22.1461          | N/A            |
+| Poly^2 LR      | 20.213504       | 21.3657          | N/A            |
+| OLS            | 21.030195       | N/A              | N/A            |
+| LASSO + LARS   | 21.030195       | 21.0401          | 20.9898        |
+| Baseline       | 22.897138       | N/A              | N/A            |  
+
+**How It Works:**  
+Lasso + Lars is a form of linear regression that performs both feature selection and noise reduction to avoid overfitting. This not only helps improve its performance and interpretablility but it also comes with the bonus of being more resistant to overfitting which is what stopped two of our other models.  
+
+### Conclusions  
+Key drivers for popularity include **danceability**, whether a track is **explicit**, **loudness**, **track number**, and whether a track has **featured artists** or not. The best performing model was our **Lasso + Lars** model with an RMSE of **20.9898** on test. The most popular songs were about ~2 minutes long.
+
+## How to Reproduce  
+### Steps  
 1. ~Read through the README.md file~ :white_check_mark:  
 2. Download acquire.py, prepare.py, preprocessing.py, and data folder.
 3. If you don't have spotipy installed run this in your terminal: ~~~pip install spotipy~~~  
@@ -138,8 +165,8 @@ c_secret = YOURCLIENTSECRET
 ~~~
 6. Using the functions in acquire create a spotipy client.
 7. Use the functions in prepare.py and preprocessing.py to clean and set up your data.
-8. Enjoy exploring the data!
-### Steps
+8. Enjoy exploring the data!  
+
 ### Tools & Requirements
 ## License
 ## Creators
