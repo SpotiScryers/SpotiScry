@@ -32,6 +32,7 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 ### Acknowledgments
 * [Continuous data stratification](https://danilzherebtsov.medium.com/continuous-data-stratification-c121fc91964b) by Danil Zherebtsov
 * [Using Spotipy Library](https://towardsdatascience.com/how-to-create-large-music-datasets-using-spotipy-40e7242cc6a6) by Max Hilsdorf
+* [The Most Successful Labels in Hip Hop:](https://pudding.cool/2017/03/labels/) Every hip hop record label, since 1989, sorted by their artists' chart performance on Billboard, by Matt Daniels and Kevin Beacham
 
 ## Data Dictionary
 | Feature                | Description                                                                                                                                                                                                                                                                                          |
