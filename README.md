@@ -171,5 +171,6 @@ c_secret = YOURCLIENTSECRET
 
 ### Tools & Requirements
 ## License
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 ## Creators
 [Brandon Martinez](https://github.com/Brandon-Martinez27), [Bethany Thompson](https://github.com/ThompsonBethany01), [Kwame V. Taylor](https://github.com/KwameTaylor), [Matthew Mays](https://github.com/Matthew-Mays)
