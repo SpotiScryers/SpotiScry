@@ -40,7 +40,7 @@ def create_features(df):
     df = pd.concat([df,dates], axis=1)
 
     # Flatten column MultiIndex
-    df.columns = [x[0] for x in df.columns]
+    #df.columns = [x[0] for x in df.columns]
 
     df.release_year = df.release_year.astype('int')
 
