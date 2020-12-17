@@ -1,7 +1,7 @@
 ![Header](https://i.pinimg.com/originals/d2/c6/29/d2c629d9295ff516375ef2ec3ac25bc8.png)
 
 ## About the Project
-What is the target variable? Popularity
+What makes a song reach the top of the charts while others flop? Using data from Spotify, our team will determine what features influence song popularity - such as the danceability or song length. We will then predict a song’s popularity.
 
 ### Goals
 - Build a dataset of songs using Spotify's API
