@@ -39,6 +39,9 @@ def create_features(df):
     # adding to the dataframe with axis=1 to add column-wise
     df = pd.concat([df,dates], axis=1)
 
+    # Flatten column MultiIndex
+    df.columns = [x[0] for x in df.columns]
+
     df.release_year = df.release_year.astype('int')
 
     # bins set edge points for range of label
