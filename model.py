@@ -150,3 +150,54 @@ def evaluate_df(bl_train_rmse, lm_rmse, lars_rmse, lars_rmse_v, lars_rmse_t, lm_
     print(f'Model beat baseline by {abs((lars_rmse_t - bl_train_rmse)/bl_train_rmse)*100:.2f}%')
     return pd.DataFrame(columns=columns, data=data, index=index).sort_values(by='train_rmse')
 
+def visualize_model(y_predictions, y_actual, baseline_predictions, model_name):
+
+    '''
+    Plot a model's predictions versus what the perfect model would perform and versus the baseline.
+    Needs a series of the models predictions, the actual values, and the baseline. The model name
+    is used in the legend of the plot.
+    '''
+    
+    # first, a gray line representing the baseline prediction, 
+    # a horizontal line because it only predicts the average
+    plt.figure(figsize=(16,8))
+    plt.axhline(baseline_predictions, alpha=.95, color="gray", linestyle=':', label='Baseline Prediction: Average')
+
+    # next, straight line for the actual values
+    # y = x, i.e. when the value is 10 it would be predicted 10, when 60 it would be 60, etc.
+    plt.plot(y_actual, y_actual, alpha=.9, color="blue", label='The Ideal Line: Actual Values')
+
+    # next, a scatter plot representing each observation (song popularity) as the actual value vs. the predicted value
+    plt.scatter(y_actual, y_predictions, 
+            alpha=.3, color='red', s=30, label=f'Model: {model_name}')
+
+    # adding plot labels
+    plt.legend()
+    plt.xlabel("Actual Song Popularity", size=13)
+    plt.ylabel("Predicted Song Popularity", size=13)
+    plt.title("How Does the Final Model Compare to Baseline? And to Actual Values?", size=15)
+    plt.show()
+
+    def visualize_error(y_predictions, y_actual, baseline_predictions, model_name):
+
+    '''
+    Plot each model prediction by the error as actual value minus predicted. The further from the horizontal 
+    blue line, the greater the error for that prediction.
+    '''
+    
+    plt.figure(figsize=(16,8))
+
+    # a straight line for an observation having no error, would lie on this line
+    plt.axhline(label="The Ideal Line: No Error")
+
+    # the actual song popularity vs how far the prediction is from the actual
+    plt.scatter(y_actual, y_predictions - y_actual, 
+            alpha=.3, color='red', s=30, label=f'Model: {model_name}')
+
+    # plot labels
+    plt.legend()
+    plt.xlabel("Actual Song Popularity", size=13)
+    plt.ylabel("Residual/Error: Predicted Popularity - Actual Popularity", size=13)
+    plt.title("Do the Size of Errors Change as the Popularity Changes?", size=15)
+
+    plt.show()
