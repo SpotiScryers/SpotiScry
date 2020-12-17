@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from scipy import stats
 from math import sqrt
+import matplotlib.pyplot as plt
 
 from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
@@ -135,19 +136,51 @@ def polynomial_regression(X_tr, y_tr, X_v, y_v, dstring, **kwargs):
     print('On train data:\n', round(lm_sq_rmse, 6), '\n')
     return lm_sq_rmse, lm_sq_rmse_v
 
-def evaluate_df(bl_train_rmse, lm_rmse, lars_rmse, lars_rmse_v, lars_rmse_t, lm_sq_rmse, lm_sq_rmse_v, lm_cb_rmse, lm_cb_rmse_v):
+def glm_model(X_tr, y_tr, X_v, y_v, X_te, y_te, d_str, **kwargs):
+    '''
+    Generalized Linear Model with a Tweedie distribution.
+    This estimator can be used to model different GLMs depending 
+    on the power parameter, which determines the underlying distribution.
+    '''
+    # create the model object
+    glm = TweedieRegressor(**kwargs)
+
+    # fit the model to our training data
+    glm.fit(X_tr, y_tr)
+
+    # predict on train
+    glm_pred = glm.predict(X_tr)
+    # compute root mean squared error
+    glm_rmse = sqrt(mean_squared_error(y_tr, glm_pred))
+
+    # predict on validate
+    glm_pred_v = glm.predict(X_v)
+    # compute root mean squared error
+    glm_rmse_v = sqrt(mean_squared_error(y_v, glm_pred_v))
+
+    # predict on test
+    glm_pred_t = glm.predict(X_te)
+    # compute root mean squared error
+    glm_rmse_t = sqrt(mean_squared_error(y_te, glm_pred_t))
+    print(f'RMSE for GLM using {d_str} Distribution \n')
+    print('On train data:\n', round(glm_rmse, 6), '\n')
+    print(glm_rmse_v)
+    return glm_rmse, glm_rmse_v, glm_rmse_t, glm_pred_t
+
+def evaluate_df(bl_train_rmse, lm_rmse, lars_rmse, lars_rmse_v, lars_rmse_t, lm_sq_rmse, lm_sq_rmse_v, lm_cb_rmse, lm_cb_rmse_v, svr_rmse, glm_rmse, glm_rmse_v, glm_rmse_t):
     '''
     This function creates a dataframe with rmse as the evaluating metric for 
     the models we used. Columns are the datasets' rmse assessed for each model
     '''
     columns = ['train_rmse', 'validate_rmse', 'test_rmse']
-    index = ['baseline', 'ols', 'lassolars', 'pf2_lr', 'pf3_lr']
+    index = ['baseline', 'ols', 'lassolars', 'pf2_lr', 'SVM', 'GLM']
     data = [[bl_train_rmse, '-', '-'],
             [lm_rmse, '-', '-'],
-            [lars_rmse, lars_rmse_v, lars_rmse_t],
-            [lm_sq_rmse, lm_sq_rmse_v, '-'],
-            [lm_cb_rmse, lm_cb_rmse_v, '-']]
-    print(f'Model beat baseline by {abs((lars_rmse_t - bl_train_rmse)/bl_train_rmse)*100:.2f}%')
+            [lars_rmse, lars_rmse_v, '-'],
+            [lm_sq_rmse, lm_sq_rmse_v, '-'], 
+            [svr_rmse, '-', '-'],
+            [glm_rmse, glm_rmse_v, glm_rmse_t]]
+    print(f'Model beat baseline by {abs((glm_rmse_t - bl_train_rmse)/bl_train_rmse)*100:.2f}%')
     return pd.DataFrame(columns=columns, data=data, index=index).sort_values(by='train_rmse')
 
 def visualize_model(y_predictions, y_actual, baseline_predictions, model_name):
@@ -178,13 +211,12 @@ def visualize_model(y_predictions, y_actual, baseline_predictions, model_name):
     plt.title("How Does the Final Model Compare to Baseline? And to Actual Values?", size=15)
     plt.show()
 
-    def visualize_error(y_predictions, y_actual, baseline_predictions, model_name):
-
+def visualize_error(y_predictions, y_actual, baseline_predictions, model_name):
     '''
-    Plot each model prediction by the error as actual value minus predicted. The further from the horizontal 
+    Plot each model prediction by the error as actual value minus predicted. 
+    The further from the horizontal 
     blue line, the greater the error for that prediction.
     '''
-    
     plt.figure(figsize=(16,8))
 
     # a straight line for an observation having no error, would lie on this line
