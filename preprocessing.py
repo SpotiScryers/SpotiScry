@@ -46,6 +46,12 @@ def create_features(df):
     df['decade'] = pd.cut(x=df.release_year, bins=[1979,1989,1999,2009,2019,2029], 
                                                 labels=['80s','90s','2000s','2010s','2020s'])
 
+    # create is_top_billboard_label
+    top_ten_billboard = ['Def Jam', 'Young Money', 'Roc-A-Fella', 'Jive', 'Bad Boy', 'Grand Hustle', 'Shady', 'Ruffhouse', 'Cash Money', 'Columbia']
+    pattern = '|'.join(top_ten_billboard)
+    train['is_top_billboard_label'] = train.label.str.contains(pattern)
+    train['is_top_billboard_label'] = train.is_top_billboard_label.astype('int')
+
     return df
 
 ##################################################### Split the Data #####################################################
