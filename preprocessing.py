@@ -8,7 +8,6 @@ from sklearn.model_selection import train_test_split
 ################################################## Feature Engineering ###################################################
 
 def create_features(df):
-
     '''
     Creates features based on the original dataframe. Converts track duration into new columns for length in seconds and
     length in minutes. Creates a feature for a boolean value if the track features an artist or not. Lower cases all 
