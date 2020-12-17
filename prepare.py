@@ -37,7 +37,8 @@ def change_dtypes(df):
     df['popularity'] = df.popularity.astype('int')
     df['time_signature'] = df.time_signature.astype('int')
     df['track_number'] = df.track_number.astype('int')
-
+    df['decade'] = df.decade.astype('object')
+    
     return df
 
 def prepare_df(df):

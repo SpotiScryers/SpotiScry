@@ -36,7 +36,7 @@ def create_features(df):
     # ensuring index is the same as the df
     dates.index = df.index
     # adding to the dataframe with axis=1 to add column-wise
-    df = pd.concat([df.dates], axis=1)
+    df = pd.concat([dates, df], axis=1)
 
     # Flatten column MultiIndex
     #df.columns = [x[0] for x in df.columns]
