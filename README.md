@@ -33,6 +33,7 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 * [Continuous data stratification](https://danilzherebtsov.medium.com/continuous-data-stratification-c121fc91964b) by Danil Zherebtsov
 * [Using Spotipy Library](https://towardsdatascience.com/how-to-create-large-music-datasets-using-spotipy-40e7242cc6a6) by Max Hilsdorf
 * [The Most Successful Labels in Hip Hop:](https://pudding.cool/2017/03/labels/) Every hip hop record label, since 1989, sorted by their artists' chart performance on Billboard, by Matt Daniels and Kevin Beacham
+* [What Is “Escape Room” And Why Is It One Of My Top Genres On Spotify?:](https://festivalpeak.com/what-is-escape-room-and-why-is-it-one-of-my-top-genres-on-spotify-a886372f003f) Using data to understand how genres understand us, by Cherie Hu
 
 ## Data Dictionary
 | Feature                | Description                                                                                                                                                                                                                                                                                          |
