@@ -52,8 +52,8 @@ def create_features(df):
     # create is_top_billboard_label
     top_ten_billboard = ['Def Jam', 'Young Money', 'Roc-A-Fella', 'Jive', 'Bad Boy', 'Grand Hustle', 'Shady', 'Ruffhouse', 'Cash Money', 'Columbia']
     pattern = '|'.join(top_ten_billboard)
-    train['is_top_billboard_label'] = train.label.str.contains(pattern)
-    train['is_top_billboard_label'] = train.is_top_billboard_label.astype('int')
+    df['is_top_billboard_label'] = df.label.str.contains(pattern)
+    df['is_top_billboard_label'] = df.is_top_billboard_label.astype('int')
 
     return df
 
