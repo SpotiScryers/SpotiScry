@@ -1,4 +1,19 @@
 ![Header](https://i.pinimg.com/originals/d2/c6/29/d2c629d9295ff516375ef2ec3ac25bc8.png)
+## Table of Contents
+1. About the Project  
+[Goals](https://github.com/SpotiScryers/SpotiScry#goals) | [Background](https://github.com/SpotiScryers/SpotiScry#background) | [Deliverables](https://github.com/SpotiScryers/SpotiScry#deliverables)  
+
+2. Data Dictionary  
+[Original Features](https://github.com/SpotiScryers/SpotiScry#original-features) | [Engineered Features](https://github.com/SpotiScryers/SpotiScry#engineered-features)  
+
+3. Initial Thoughts & Hypotheses  
+[Thoughts](https://github.com/SpotiScryers/SpotiScry#thoughts) | [Hypotheses](https://github.com/SpotiScryers/SpotiScry#hypotheses)  
+
+4. Project Steps  
+[Acquire](https://github.com/SpotiScryers/SpotiScry#acquire) | [Prepare](https://github.com/SpotiScryers/SpotiScry#prepare) | [Explore](https://github.com/SpotiScryers/SpotiScry#explore) | [Model](https://github.com/SpotiScryers/SpotiScry#model) | [Conclusions](https://github.com/SpotiScryers/SpotiScry#conclusions)  
+
+5. How to Reproduce & More  
+[Steps](https://github.com/SpotiScryers/SpotiScry#steps) | [Tools & Requirements](https://github.com/SpotiScryers/SpotiScry#Tools-&-Requirements) | [License](https://github.com/SpotiScryers/SpotiScry#License) | [Creators](https://github.com/SpotiScryers/SpotiScry#Creators)
 
 ## About the Project
 What makes a song reach the top of the charts while others flop? Using data from Spotify, our team will determine what features influence song popularity - such as the danceability or song length. We will then predict a song’s popularity.
@@ -37,6 +52,8 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 * [Tunebat](https://tunebat.com/Info/WAP-feat-Megan-Thee-Stallion-Cardi-B-Megan-Thee-Stallion/4Oun2ylbjFKMPTiaSbbCih)
 
 ## Data Dictionary
+### Original Features
+Below are the features included in the orginal data acquired from the Spotify API.  
 | Feature                | Description                                                                                                                                                                                                                                                                                          |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | artists                | The artists who performed the track                                                                                                                                                                                                                                                                  |
@@ -58,6 +75,9 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 | release_date           | The date the album was first released, if only year was given as precision it defaults to YYYY-01-01                                                                                                                                                                                                 |
 | popularity             | Target variable, value between 0 - 100 that measures how many views the track has gotten in relation to how current those views are.                                                                                                                                                                 |
 | explicit               | Boolean variable for whether or not the track has explicit lyrics.                                                                                                                                                                                                                                   |
+### Engineered Features
+Using domain knowledge and exploration insights, we also engineered features using the original data. These created features are below.
+** insert data dictionary here **
 
 ## Initial Thoughts & Hypotheses
 ### Thoughts
