@@ -13,7 +13,7 @@
 [Acquire](https://github.com/SpotiScryers/SpotiScry#acquire) | [Prepare](https://github.com/SpotiScryers/SpotiScry#prepare) | [Explore](https://github.com/SpotiScryers/SpotiScry#explore) | [Model](https://github.com/SpotiScryers/SpotiScry#model) | [Conclusions](https://github.com/SpotiScryers/SpotiScry#conclusions)  
 
 5. How to Reproduce & More  
-[Steps](https://github.com/SpotiScryers/SpotiScry#steps) | [Tools & Requirements](https://github.com/SpotiScryers/SpotiScry#Tools-&-Requirements) | [License](https://github.com/SpotiScryers/SpotiScry#License) | [Creators](https://github.com/SpotiScryers/SpotiScry#Creators)
+[Steps](https://github.com/SpotiScryers/SpotiScry#steps) | [Tools & Requirements](https://github.com/SpotiScryers/SpotiScry#tools--requirements) | [License](https://github.com/SpotiScryers/SpotiScry#License) | [Creators](https://github.com/SpotiScryers/SpotiScry#Creators)
 
 ## About the Project
 What makes a song reach the top of the charts while others flop? Using data from Spotify, our team will determine what features influence song popularity - such as the danceability or song length. We will then predict a song’s popularity.
