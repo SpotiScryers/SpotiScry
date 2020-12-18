@@ -70,14 +70,21 @@ Below are the features included in the orginal data acquired from the Spotify AP
 | liveness               | Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.                                                                              |
 | valence                | A measure from 0 - 1 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (happy, cheerful, euphoric), while tracks with low valence sound more negative (sad, depressed, angry).                                                                   |
 | tempo                  | The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.                                                                                                           |
-| duration_ms/duration_s | The duration of the song in ms or s respectively                                                                                                                                                                                                                                                     |
+| duration_ms            | The duration of the song in ms                                                                                                                                                                                                                                                                        |
 | time_signature         | An estimated overall time signature of a track, the time signature is a notational convention to specify how many beats are in each bar.                                                                                                                                                             |
 | release_date           | The date the album was first released, if only year was given as precision it defaults to YYYY-01-01                                                                                                                                                                                                 |
 | popularity             | Target variable, value between 0 - 100 that measures how many views the track has gotten in relation to how current those views are.                                                                                                                                                                 |
 | explicit               | Boolean variable for whether or not the track has explicit lyrics.                                                                                                                                                                                                                                   |
 ### Engineered Features
-Using domain knowledge and exploration insights, we also engineered features using the original data. These created features are below.
-** insert data dictionary here **
+Using domain knowledge and exploration insights, we also engineered features using the original data. These created features are below.  
+| Feature Name             | Description                                                                                                                                   |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| duration_seconds/minutes | Converting the track duration in milliseconds to seconds and minutes, rounded integers                                                        |
+| is_featured_artist       | Boolean value if the track name includes 'feat', meaning an additional artist is on the track                                                 |
+| decade                   | The decade the track was released in based on the release year, 80s - 90s - 2000s - 2010s - 2020s                                             |
+| top_ten_label            | Boolean if the track is produced by a top record label (based on count of songs produced by the record and the average popularity)            |
+| popularity_bins          | Binned values on popularity feature using domain knowledge: <br>0-10 as 'Very Low', 11-40 as 'Low', 41-70 as 'moderate', and 71-100 as 'High' |
+| danceability_bins        | Binned values on danceability feature using qcut to create three equal bins:<br>0-.69 as 'Low', .70-.80 as 'Medium', .81-1.0 as 'High'        |
 
 ## Initial Thoughts & Hypotheses
 ### Thoughts
