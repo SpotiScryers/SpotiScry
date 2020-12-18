@@ -48,7 +48,7 @@ def fix_tempo(df):
     here I have automated fixing tempo by halving any tempo that is 170 or above.
     Doing this increases the accuracy of the tempo values overall.
     '''
-    df['tempo'] = np.where(df.tempo >= 170, df.tempo/2, df.tempo)
+    df['tempo'] = np.where(df['tempo'] >= 170, df['tempo']/2, df['tempo'])
     return df
 
 def prepare_df(df):
