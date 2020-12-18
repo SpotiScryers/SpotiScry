@@ -38,7 +38,17 @@ def change_dtypes(df):
     df['time_signature'] = df.time_signature.astype('int')
     df['track_number'] = df.track_number.astype('int')
     df['decade'] = df.decade.astype('object')
-    
+    return df
+
+def fix_tempo(df):
+    '''
+    From domain knowledge, I know that computer-detected BPMs (beats
+    per minute) are often incorrectly assessed as twice its actual value.
+    Fact-checked by searching for the official BPM of tracks higher than 160,
+    here I have automated fixing tempo by halving any tempo that is 170 or above.
+    Doing this increases the accuracy of the tempo values overall.
+    '''
+    df['tempo'] = np.where(df.tempo >= 170, df.tempo/2, df.tempo)
     return df
 
 def prepare_df(df):
@@ -46,4 +56,5 @@ def prepare_df(df):
     df = handle_nulls(df)
     df = change_dtypes(df)
     df = set_index(df)
+    df = fix_tempo(df)
     return df
