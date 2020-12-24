@@ -41,8 +41,8 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 - [X] Exploration: December 14th
 - [X] Modeling: December 15th
 - [X] Finalize Minimum Viable Product (MVP): EOD December 15th
-- [ ] Improve/Iterate MVP: December 16th
-- [ ] Finalize Presentation: December 17th
+- [X] Improve/Iterate MVP: December 17th
+- [ ] Finalize Presentation: December 31st
 
 ### Acknowledgments
 * [Continuous data stratification](https://danilzherebtsov.medium.com/continuous-data-stratification-c121fc91964b) by Danil Zherebtsov
@@ -50,6 +50,7 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 * [The Most Successful Labels in Hip Hop:](https://pudding.cool/2017/03/labels/) Every hip hop record label, since 1989, sorted by their artists' chart performance on Billboard, by Matt Daniels and Kevin Beacham
 * [What Is “Escape Room” And Why Is It One Of My Top Genres On Spotify?:](https://festivalpeak.com/what-is-escape-room-and-why-is-it-one-of-my-top-genres-on-spotify-a886372f003f) Using data to understand how genres understand us, by Cherie Hu
 * [Tunebat](https://tunebat.com/Info/WAP-feat-Megan-Thee-Stallion-Cardi-B-Megan-Thee-Stallion/4Oun2ylbjFKMPTiaSbbCih)
+* [The Case For Lil Jon As One of Hip-Hop’s Greatest Producers](https://medium.com/@SermonsDomain/the-case-for-lil-jon-as-one-of-hip-hops-greatest-producers-ace21b04ab2b) by Erich Donaldson
 
 ## Data Dictionary
 ### Original Features
