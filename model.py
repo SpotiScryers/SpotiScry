@@ -158,7 +158,7 @@ def polynomial_regression(X_tr, y_tr, X_v, y_v, X_te, y_te, dstring, **kwargs):
     # print the train rmse
     print(f'RMSE for Polynomial {dstring} + Linear Regression \n')
     print('On train data:\n', round(lm_sq_rmse, 6), '\n')
-    return lm_sq_rmse, lm_sq_rmse_v, lm_sq_rmse_t
+    return lm_sq_rmse, lm_sq_rmse_v, lm_sq_rmse_t, lm_sq_pred_t
 
 def svr_model(X_tr, y_tr, X_v, y_v, X_te, y_te, kern_str, **kwargs):
     from sklearn.svm import SVR
