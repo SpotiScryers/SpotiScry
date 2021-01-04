@@ -4,6 +4,10 @@ from scipy import stats
 from math import sqrt
 import matplotlib.pyplot as plt
 
+from preprocessing import spotify_split, scale_data
+from acquire import concat_csv_files
+from prepare import prepare_df, set_index
+
 from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.cluster import KMeans
@@ -12,6 +16,7 @@ from sklearn.linear_model import LinearRegression, TweedieRegressor, LassoLars
 from sklearn.feature_selection import RFE
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.ensemble import IsolationForest, RandomForestRegressor
+
 
 def get_model_features(df):
     '''
@@ -296,3 +301,124 @@ def visualize_error(y_predictions, y_actual, baseline_predictions, model_name):
     plt.title("Do the Size of Errors Change as the Popularity Changes?", size=15)
 
     plt.show()
+
+    
+def polyreg_predictions(X_tr_top, X_te_top, y_train):
+    '''
+    Runs the polynomial regression model we used
+    with the combo features and returns the predictions
+    on the test data and the model itself for later use
+    '''
+    # Using the polynomial function to plot regression
+    from sklearn.preprocessing import PolynomialFeatures
+    # create polynomial features object
+    pf = PolynomialFeatures(degree=2).fit(X_tr_top)
+    
+    # fit and transform the train data
+    X_train_sq = pf.transform(X_tr_top)
+    # transform the validate data
+    #X_validate_sq = pf.transform(X_v_top)
+    # transform the validate data
+    X_test_sq = pf.transform(X_te_top)
+
+    # create the linear regression model
+    lm_sq = LinearRegression()
+    # fit the model to the training data
+    lm_sq.fit(X_train_sq, y_train)
+
+    y_pred_test = lm_sq.predict(X_test_sq)
+    return lm_sq, y_pred_test, pf
+
+
+def plot_polyreg(y_test, lm_sq_pred_t, y_pred_test, bl):
+    '''
+    Plots the baseline, polynomial line of best fit,
+    and the actual vs predicted values for popularity
+    '''
+    from scipy.optimize import curve_fit
+    # define the true objective function
+    def objective(x, a, b, c):
+        return a * x + b * x**2 + c
+
+    x, y = y_test, y_pred_test
+    popt, _ = curve_fit(objective, x, y)
+    a, b, c = popt
+    equation = f'y = %.3f $x^2$ + %.3f x + %.2f' % (a, b, c)
+
+    # first, a gray line representing the baseline prediction,
+    # a horizontal line because it only predicts the average
+    plt.figure(figsize=(16,8))
+    plt.axhline(bl, alpha=.95, color="black", linestyle='--', label='Baseline Prediction: Average')
+
+    # define a sequence of inputs between the smallest and largest known inputs
+    x_line = np.arange(min(x), max(x), 1)
+    # calculate the output for the range
+    y_line = objective(x_line, a, b, c)
+    # create a line plot for the mapping function
+    plt.plot(x_line, y_line, color='dodgerblue', linewidth=3, label='The Line of Best Fit')
+
+    # next, a scatter plot representing each observation (song popularity) as the actual value vs. the predicted value
+    plt.scatter(y_test, lm_sq_pred_t, 
+            alpha=.4, color='red', s=50, label='Model: Polynomial Regression - 2nd Degree')
+
+    # adding plot labels
+    plt.annotate(equation, xy=(35, 38.5), xytext=(40,17), size=14,
+                arrowprops=dict(facecolor='dodgerblue', shrink=0.05, alpha=.8, linewidth=.5))
+    plt.legend(fontsize=14)
+    plt.xticks([0, 20, 40, 60, 80, 100])
+    plt.yticks([0, 20, 40, 60])
+    #plt.xlabel("Actual Song Popularity", size=14)
+    #plt.ylabel("Predicted Song Popularity", size=14)
+    #plt.title("How Does the Final Model Compare to Baseline? And to Actual Values?", size=15)
+    plt.show()
+    print(equation)
+    
+
+################################# FEATURE IMPORTANCES #################################
+
+    
+    
+def get_important_feats(lm_sq, pf, X_tr_top):
+    '''
+    This function extracts the most influential features
+    by creating a dataframe of the most important features/combination,
+    with their rank
+    '''
+    feature_importances = pd.DataFrame(lm_sq.coef_, 
+                                   index = pf.get_feature_names(X_tr_top.columns), 
+                                   columns=['importance']).sort_values('importance', ascending=False)
+
+    feature_importances.importance = feature_importances.importance
+
+    feature_importances.sort_values(by='importance', ascending=False, inplace=True)
+
+    feature_importances.reset_index(inplace=True)
+
+    feature_importances.index = feature_importances.index + 1
+
+    feature_importances.reset_index(inplace=True)
+
+    feature_importances.rename(columns={'level_0':'rank'}, inplace=True)
+
+    feature_importances.set_index('index', inplace=True)
+    return feature_importances
+
+def plot_top_feats(feature_importances):
+    '''
+    Plots the top 5 positive drivers of popularity
+    and the top 5 negative drivers according to our model
+    '''
+    plt.figure(figsize=(15,7))
+
+    plt.subplot(121)
+    feature_importances.importance.head(5).sort_values(ascending=True).plot(kind='barh')
+    plt.ylabel('')
+    plt.yticks(size=16)
+    plt.xticks([0, 20, 40, 60])
+
+    plt.subplot(122)
+    feature_importances.importance.tail(5).sort_values(ascending=True).plot(kind='barh')
+    plt.ylabel('')
+    plt.yticks(size=16)
+    plt.xticks([0, -40, -80, -120, -160])
+    plt.tight_layout()

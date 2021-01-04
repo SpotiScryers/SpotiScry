@@ -3,7 +3,7 @@
 
 import pandas as pd
 import numpy as np
-from preprocessing import create_features
+#from preprocessing import create_features
 
 ###################################################### Handle Nulls ######################################################
 
@@ -52,7 +52,7 @@ def fix_tempo(df):
     return df
 
 def prepare_df(df):
-    df = create_features(df)
+    
     df = handle_nulls(df)
     df = change_dtypes(df)
     df = set_index(df)
