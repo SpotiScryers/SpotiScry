@@ -32,7 +32,8 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 
 ### Deliverables
 - Video presentation
-- Presentation slides via Canva [here](https://www.canva.com/design/DAEQUdzBtqM/JW1AI9WU9ad01VO14yr2dg/view?utm_content=DAEQUdzBtqM&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu)
+- Presentation slides via Canva [here](https://www.canva.com/design/DAEQUdzBtqM/JW1AI9WU9ad01VO14yr2dg/view?utm_content=DAEQUdzBtqM&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu)  
+- Tableau Storybook [here](https://public.tableau.com/profile/thompson.bethany.01#!/vizhome/Spotiscry/Story1)
 - GitHub repository with analysis
 
 ### Timeline
