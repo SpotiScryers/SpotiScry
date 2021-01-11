@@ -136,6 +136,8 @@ Functions to prepare the dataframe are stored in two seperate files depending on
 * nulls are dropped
 * set track id to index
 * change dtypes to correct type
+* fix tempos
+    * From Kwame: "As a hip-hop artist and producer, I know firsthand how BPM (beats per minute, aka the tempo of a song) can often be miscalculated as twice their actual value. This is because most song tempos fall in-between 90 and 160 BPM, and a computer can wrongly detect tempo as double-time in slower tempos below 90. There are some genres that have faster BPM, such as 170 to 190 for Drum ’n’ Bass, however, in Hip-Hop I’ve found that the BPM is wrongly miscalculated in this way when it’s shown as 170 and above. Therefore, in our data, I chose to halve the tempos of all tracks with 170 BPM or greater for a more accurate look at tempo."
 
 **preprocessing.py:** Functions for adding features we found interesting / modyifying data for ease of use in exploration
 * convert track length from ms to seconds & minutes
