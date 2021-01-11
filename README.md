@@ -191,7 +191,7 @@ Polynomial Squared + Linear Regression was our final model we performed on test,
 Polynomial Regression: a combination of the Polynomial features algorithm and simple linear regression. Polynomial features creates new variables from the existing input variables. Using a degree of 2, the algorithm will square each feature, take the combinations of them, and use the results as new features. The degree is a parameter that is a polynomial used to create a new feature. For example, if a degree of 3 is used, each feature would be cubed, squared, and combined with each other feature. Finally, a regression model is fit to the curved line of best fit depending on the degree.
 
 ### Conclusions  
-Key drivers for popularity include **danceability with speechiness**, whether a track is **explicit**, **energy**, **track number**, and whether a track has **featured artists** or not. The best performing model was our **Lasso + Lars** model with an RMSE of **20.9898** on test. The most popular songs were about ~2 minutes long.
+Key drivers for popularity include **danceability with speechiness**, whether a track is **explicit**, **energy**, **track number**, and whether a track has **featured artists** or not. The best performing model was our **2nd Degree Polynomial Regression** model with an RMSE of **21.5236** on the testing dataset. The most popular songs were about ~2 minutes long.
 
 ## How to Reproduce  
 ### Steps  
