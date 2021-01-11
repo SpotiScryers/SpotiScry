@@ -190,6 +190,10 @@ We used three sets of feauture groups.
 * Support Vector Regression using RBF Kernel
 * General Linear Model with Normal Distribution
 
+**Evaluation Metric**  
+Models are evaluated by calculating the root mean squared error (RMSE) or residual of the predicted value to the actual observation. The smaller the RMSE, the better the model performed. A visual of this error is below.  
+![Model-Error](https://github.com/SpotiScryers/SpotiScry/blob/main/images/model_error.png?raw=true)
+
 **Final Model:**  
 Polynomial Squared + Linear Regression was our final model we performed on test, predicting 6% better than the baseline.  
 
@@ -203,7 +207,9 @@ Polynomial Squared + Linear Regression was our final model we performed on test,
 | LASSO + LARS                  | 22.897138  |               |           |  
 
 **How It Works:**  
-Polynomial Regression: a combination of the Polynomial features algorithm and simple linear regression. Polynomial features creates new variables from the existing input variables. Using a degree of 2, the algorithm will square each feature, take the combinations of them, and use the results as new features. The degree is a parameter that is a polynomial used to create a new feature. For example, if a degree of 3 is used, each feature would be cubed, squared, and combined with each other feature. Finally, a regression model is fit to the curved line of best fit depending on the degree.
+Polynomial Regression: a combination of the Polynomial features algorithm and simple linear regression. Polynomial features creates new variables from the existing input variables. Using a degree of 2, the algorithm will square each feature, take the combinations of them, and use the results as new features. The degree is a parameter that is a polynomial used to create a new feature. For example, if a degree of 3 is used, each feature would be cubed, squared, and combined with each other feature. Finally, a regression model is fit to the curved line of best fit depending on the degree. An example of determining best fit is below.  
+
+![Model_Evaluation](https://github.com/SpotiScryers/SpotiScry/blob/main/images/Model_Evaluation.png?raw=true)
 
 ### Conclusions  
 Key drivers for popularity include **danceability with speechiness**, whether a track is **explicit**, **energy**, **track number**, and whether a track has **featured artists** or not. The best performing model was our **2nd Degree Polynomial Regression** model with an RMSE of **21.5236** on the testing dataset. The most popular songs were about ~2 minutes long.
