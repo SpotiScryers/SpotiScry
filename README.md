@@ -16,7 +16,7 @@
 [Steps](https://github.com/SpotiScryers/SpotiScry#steps) | [Tools & Requirements](https://github.com/SpotiScryers/SpotiScry#tools--requirements) | [License](https://github.com/SpotiScryers/SpotiScry#License) | [Creators](https://github.com/SpotiScryers/SpotiScry#Creators)
 
 ## About the Project
-What makes a song reach the top of the charts while others flop? Using data from Spotify, our team will determine what features influence song popularity - such as the danceability or song length. We will then predict a song’s popularity.
+What makes a song reach the top of the charts while others flop? Using data from Spotify, our team will determine what features influence song popularity - such as the danceability or song length. We will then predict a song’s popularity. You can check out our presentation [here](https://www.canva.com/design/DAEQUdzBtqM/JW1AI9WU9ad01VO14yr2dg/view?utm_content=DAEQUdzBtqM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton) and our Spotify playlist our data comes from [here](https://open.spotify.com/playlist/3P6Pr6iEqvK5fl4UkgdQ7T?si=6EzeUwUwTF61b2fpo7uNGg).
 
 ### Goals
 - Build a dataset of songs using Spotify's API
