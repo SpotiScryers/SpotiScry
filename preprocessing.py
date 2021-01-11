@@ -4,6 +4,8 @@
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
+from acquire import concat_csv_files
+from prepare import prepare_df, set_index
 
 ################################################## Feature Engineering ###################################################
 
@@ -314,26 +316,23 @@ def modeling_prep():
     '''
     This function prepares the data for modeling
     '''
-    # read the data from a csv into a dataframe
-    df = pd.read_csv('data/full-playlist.csv', index_col=0)
-    # handle nulls in release data
-    df['release_date'] = np.where(df['release_date'].str.len()==4, 
-                            df.release_date.astype(str) + '-01-01', df['release_date'])
-    # drop any other observations that contain nulls
-    df = df.dropna()
-    # used the helper function to encode categorical features
-    df = encode_features(df)
-    # creates the top_ten_label feature
-    df = get_top_ten_labels(df)
-    # creates dummy variables for the album type (encode)
-    album_dummies = pd.get_dummies(df.album_type, drop_first=True)
+    # all local csv data compiled into a dataframe
+    df = concat_csv_files()
+    # adds new features, handles nulls, fixes data types, 
+    # set the index to track_id, and fixes the tempo feature
+    df = create_features(df)
+    df = prepare_df(df)
+    df = df.drop(columns='album')
+    #encode album_type
+    album_dummies = pd.get_dummies(df.album_type, drop_first=False).astype('int')
     df = pd.concat([df, album_dummies], axis=1)
-    df[['compilation', 'single']]= df[['compilation', 'single']].astype('int')
+
     # drop any columns that won't contribute to modeling
+
     df = df.drop(columns=['album_popularity','label', 'artist', 
-                        'album', 'release_date', 'track_name', 'album_id', 'album_type',
+                        'release_date', 'track_name', 'album_id', 'album_type',
                         'release_year', 'release_month', 'release_day', 'duration_minutes', 
-                        'duration_seconds'])
+                        'duration_seconds', 'decade', 'is_top_billboard_label'])
     return df
 
 def select_kbest(X, y, n):
