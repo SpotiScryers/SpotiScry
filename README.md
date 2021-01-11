@@ -162,32 +162,36 @@ During exploration we looked at these features:
 ### Model
 First we made a baseline model to compare our model performances. The baseline was based on the average popularity for a track in our train split, which means our baseline prediction came out to a popularity of 38. The baseline model had an RMSE of 22.8 on the train split. We created various regression models and fit to the train data.  
 
-**The models evaluated on train were:**
+**Feature Groups**
+We used three sets of feauture groups. 
+- Select K best: selects features according to the k highest scores (top 5)
+- Recursive Feature Elimination: features that perform best on a simple linear regression model (top 5)
+- Combination (unique features from both groups, 7 features)
+
+**Models Evaluated**
 * OLS Linear Regression
 * LASSO + LARS
-* Polynomial Squared Linear Regression
-* Polynomial Cubed Linear Regression  
+* Polynomial Squared + Linear Regression
+* Support Vector Regression using RBF Kernel
+* General Linear Model with Normal Distribution
 
-**Models evaluated on validate were:**
-* Polynomial Cube
-* Polynomial Squared
-* LASSO + LARS
 **Final Model:**  
-LASSO + LARS was our final model we performed on test, it was beaten early on in train by the other two but proved to be not overfit unlike the polynomial squared/cubed regressions.  
+Polynomial Squared + Linear Regression was our final model we performed on test, predicting 6% better than the baseline.  
 
-| Model          | Train RMSE      | Validate RMSE    | Test RMSE      |
-|----------------|-----------------|------------------|----------------|
-| Poly^3 LR      | 19.836287       | 22.1461          | N/A            |
-| Poly^2 LR      | 20.213504       | 21.3657          | N/A            |
-| OLS            | 21.030195       | N/A              | N/A            |
-| LASSO + LARS   | 21.030195       | 21.0401          | 20.9898        |
-| Baseline       | 22.897138       | N/A              | N/A            |  
+| Model                         | Train RMSE | Validate RMSE | Test RMSE |
+|-------------------------------|------------|---------------|-----------|
+| Polynomial 2nd Degree         | 21.599581  | 21.5257       | 21.5236   |
+| OLS Linear Regression         | 21.796331  | 21.7566       |           |
+| Support Vector Regression     | 21.812662  | 21.6988       |           |
+| General Linear Model - Normal | 21.821093  |               |           |
+| Baseline - Average            | 22.897138  |               |           |
+| LASSO + LARS                  | 22.897138  |               |           |  
 
 **How It Works:**  
-Lasso + Lars is a form of linear regression that performs both feature selection and noise reduction to avoid overfitting. This not only helps improve its performance and interpretablility but it also comes with the bonus of being more resistant to overfitting which is what stopped two of our other models.  
+Polynomial Regression: a combination of the Polynomial features algorithm and simple linear regression. Polynomial features creates new variables from the existing input variables. Using a degree of 2, the algorithm will square each feature, take the combinations of them, and use the results as new features. The degree is a parameter that is a polynomial used to create a new feature. For example, if a degree of 3 is used, each feature would be cubed, squared, and combined with each other feature. Finally, a regression model is fit to the curved line of best fit depending on the degree.
 
 ### Conclusions  
-Key drivers for popularity include **danceability**, whether a track is **explicit**, **loudness**, **track number**, and whether a track has **featured artists** or not. The best performing model was our **Lasso + Lars** model with an RMSE of **20.9898** on test. The most popular songs were about ~2 minutes long.
+Key drivers for popularity include **danceability with speechiness**, whether a track is **explicit**, **energy**, **track number**, and whether a track has **featured artists** or not. The best performing model was our **Lasso + Lars** model with an RMSE of **20.9898** on test. The most popular songs were about ~2 minutes long.
 
 ## How to Reproduce  
 ### Steps  
