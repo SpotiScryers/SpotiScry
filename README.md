@@ -127,6 +127,7 @@ Using domain knowledge and exploration insights, we also engineered features usi
 ## Project Steps
 ### Acquire
 Data was acquired from Spotify API using the spotipy library. Going to this website https://developer.spotify.com/dashboard/login let us create a spotify web app that gave us a client id and client secret. This allowed us to use the create_spotipy_client function to create our own spotipy client that could access the API.  
+![Acquire-Visual](https://github.com/SpotiScryers/SpotiScry/blob/main/images/1.png?raw=true)
 
 The dataframe is saved as a csv file and has around 5900 observations, otherwise in the acquire.py file there is function for grabbing the entire capstone playlist as well as a function for acquiring any additional playlists should you choose. There are 24 columns in the original data frame, this ranges from track and album metadata to audio features for that track. There are very few nulls which have been marked as null in the data acquisition function for ease of removal later in prepare.
 ### Prepare
