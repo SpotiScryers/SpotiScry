@@ -159,11 +159,11 @@ During exploration we looked at these features:
 * instrumentalness
 * danceability
 
-![Subgenre Popularity](Genre_with_Title.png?raw=true)
+![Subgenre Popularity](https://github.com/SpotiScryers/SpotiScry/blob/main/images/Genre_with_Title.png?raw=true)
 
-![Popular Tempos](Tempo_with_Title.png?raw=true)
+![Popular Tempos](https://github.com/SpotiScryers/SpotiScry/blob/main/images/Tempo_with_Title.png?raw=true)
 
-![Popular Key Signatures](Key_with_Title.png?raw=true)
+![Popular Key Signatures](https://github.com/SpotiScryers/SpotiScry/blob/main/images/Key_with_Title.png?raw=true)
 
 ### Model
 First we made a baseline model to compare our model performances. The baseline was based on the average popularity for a track in our train split, which means our baseline prediction came out to a popularity of 38. The baseline model had an RMSE of 22.8 on the train split. We created various regression models and fit to the train data.  
