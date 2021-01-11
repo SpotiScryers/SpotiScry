@@ -1,7 +1,7 @@
 ![Header](https://i.pinimg.com/originals/d2/c6/29/d2c629d9295ff516375ef2ec3ac25bc8.png)
 ## Table of Contents
 1. About the Project  
-[Goals](https://github.com/SpotiScryers/SpotiScry#goals) | [Background](https://github.com/SpotiScryers/SpotiScry#background) | [Deliverables](https://github.com/SpotiScryers/SpotiScry#deliverables) | [Outline](https://github.com/SpotiScryers/SpotiScry#project-outline)  
+[Goals](https://github.com/SpotiScryers/SpotiScry#goals) | [Background](https://github.com/SpotiScryers/SpotiScry#background) | [The Data](https://github.com/SpotiScryers/SpotiScry#the-data) | [Deliverables](https://github.com/SpotiScryers/SpotiScry#deliverables) | [Outline](https://github.com/SpotiScryers/SpotiScry#project-outline)  
 
 2. Data Dictionary  
 [Original Features](https://github.com/SpotiScryers/SpotiScry#original-features) | [Engineered Features](https://github.com/SpotiScryers/SpotiScry#engineered-features)  
@@ -29,6 +29,13 @@ What makes a song popular? According to Splinter News [here](https://splinternew
 > sometimes artistry does hit number one). It's about popularity. And not long-term popularity. But popularity right here, right now."  
 
 By analyzing Spotify's API data, we will determine ourselves what influences a song's popularity.
+
+### The Data 
+Our dataset came from a personally curated Spotify playlist by Kwame Taylor. It includes almost 6,000 songs in the hip-hop genre from the 80s to today. Browse our playlist at anytime by scanning the QR code or just clicking the image below.  
+
+<a href="https://open.spotify.com/playlist/3P6Pr6iEqvK5fl4UkgdQ7T?si=iXXuLU0nQvG7YcHJZvB3Cg">
+   <img src="https://github.com/SpotiScryers/SpotiScry/blob/main/images/Playlist.gif?raw=true" height="300" >
+   </a>
 
 ### Deliverables
 - Video presentation
