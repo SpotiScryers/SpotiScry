@@ -1,7 +1,7 @@
 ![Header](https://i.pinimg.com/originals/d2/c6/29/d2c629d9295ff516375ef2ec3ac25bc8.png)
 ## Table of Contents
 1. About the Project  
-[Goals](https://github.com/SpotiScryers/SpotiScry#goals) | [Background](https://github.com/SpotiScryers/SpotiScry#background) | [Deliverables](https://github.com/SpotiScryers/SpotiScry#deliverables)  
+[Goals](https://github.com/SpotiScryers/SpotiScry#goals) | [Background](https://github.com/SpotiScryers/SpotiScry#background) | [Deliverables](https://github.com/SpotiScryers/SpotiScry#deliverables) | [Outline](https://github.com/SpotiScryers/SpotiScry#project-outline)  
 
 2. Data Dictionary  
 [Original Features](https://github.com/SpotiScryers/SpotiScry#original-features) | [Engineered Features](https://github.com/SpotiScryers/SpotiScry#engineered-features)  
@@ -36,6 +36,10 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 - Tableau Storybook [here](https://public.tableau.com/profile/thompson.bethany.01#!/vizhome/Spotiscry/Story1)
 - GitHub repository with analysis
 
+### Project Outline
+The files within the repository are organized as follows. The /images and /sandbox contents are not necessary for reproduction.  
+![Outline](https://github.com/SpotiScryers/SpotiScry/blob/main/images/Outline.png?raw=true)
+
 ### Timeline
 - [X] Project Planning: December 8th
 - [X] Aquisition and Prep: December 10th
@@ -52,6 +56,8 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 * [What Is “Escape Room” And Why Is It One Of My Top Genres On Spotify?:](https://festivalpeak.com/what-is-escape-room-and-why-is-it-one-of-my-top-genres-on-spotify-a886372f003f) Using data to understand how genres understand us, by Cherie Hu
 * [Tunebat](https://tunebat.com/Info/WAP-feat-Megan-Thee-Stallion-Cardi-B-Megan-Thee-Stallion/4Oun2ylbjFKMPTiaSbbCih)
 * [The Case For Lil Jon As One of Hip-Hop’s Greatest Producers](https://medium.com/@SermonsDomain/the-case-for-lil-jon-as-one-of-hip-hops-greatest-producers-ace21b04ab2b) by Erich Donaldson
+
+<kbd>[Back to Table of Contents](https://github.com/SpotiScryers/SpotiScry#table-of-contents)</kbd>
 
 ## Data Dictionary
 ### Original Features
@@ -77,6 +83,7 @@ Below are the features included in the orginal data acquired from the Spotify AP
 | release_date           | The date the album was first released, if only year was given as precision it defaults to YYYY-01-01                                                                                                                                                                                                 |
 | popularity             | Target variable, value between 0 - 100 that measures how many views the track has gotten in relation to how current those views are.                                                                                                                                                                 |
 | explicit               | Boolean variable for whether or not the track has explicit lyrics.                                                                                                                                                                                                                                   |
+
 ### Engineered Features
 Using domain knowledge and exploration insights, we also engineered features using the original data. These created features are below.  
 | Feature Name             | Description                                                                                                                                   |
@@ -88,6 +95,7 @@ Using domain knowledge and exploration insights, we also engineered features usi
 | popularity_bins          | Binned values on popularity feature using domain knowledge: <br>0-10 as 'Very Low', 11-40 as 'Low', 41-70 as 'moderate', and 71-100 as 'High' |
 | danceability_bins        | Binned values on danceability feature using qcut to create three equal bins:<br>0-.69 as 'Low', .70-.80 as 'Medium', .81-1.0 as 'High'        |
 
+<kbd>[Back to Table of Contents](https://github.com/SpotiScryers/SpotiScry#table-of-contents)</kbd>
 ## Initial Thoughts & Hypotheses
 ### Thoughts
 * What are the drivers of popularity on Spotify?
@@ -124,6 +132,7 @@ Using domain knowledge and exploration insights, we also engineered features usi
 𝐻0: there is no difference between songs released in 2020 popularity and the overall average.<br>
 𝐻𝑎: there is a difference between songs released in 2020 popularity and the overall average.
 
+<kbd>[Back to Table of Contents](https://github.com/SpotiScryers/SpotiScry#table-of-contents)</kbd>
 ## Project Steps
 ### Acquire
 Data was acquired from Spotify API using the spotipy library. Going to this website https://developer.spotify.com/dashboard/login let us create a spotify web app that gave us a client id and client secret. This allowed us to use the create_spotipy_client function to create our own spotipy client that could access the API.  
@@ -199,6 +208,7 @@ Polynomial Regression: a combination of the Polynomial features algorithm and si
 ### Conclusions  
 Key drivers for popularity include **danceability with speechiness**, whether a track is **explicit**, **energy**, **track number**, and whether a track has **featured artists** or not. The best performing model was our **2nd Degree Polynomial Regression** model with an RMSE of **21.5236** on the testing dataset. The most popular songs were about ~2 minutes long.
 
+<kbd>[Back to Table of Contents](https://github.com/SpotiScryers/SpotiScry#table-of-contents)</kbd>
 ## How to Reproduce  
 ### Steps  
 1. ~Read through the README.md file~ :white_check_mark:  
@@ -220,4 +230,5 @@ c_secret = YOURCLIENTSECRET
 ## License
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 ## Creators
-[Brandon Martinez](https://github.com/Brandon-Martinez27), [Bethany Thompson](https://github.com/ThompsonBethany01), [Kwame V. Taylor](https://github.com/KwameTaylor), [Matthew Mays](https://github.com/Matthew-Mays)
+[Brandon Martinez](https://github.com/Brandon-Martinez27), [Bethany Thompson](https://github.com/ThompsonBethany01), [Kwame V. Taylor](https://github.com/KwameTaylor), [Matthew Mays](https://github.com/Matthew-Mays)  
+<kbd>[Back to Table of Contents](https://github.com/SpotiScryers/SpotiScry#table-of-contents)</kbd>
