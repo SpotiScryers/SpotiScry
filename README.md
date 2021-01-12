@@ -34,7 +34,7 @@ By analyzing Spotify's API data, we will determine ourselves what influences a s
 Our dataset came from a personally curated Spotify playlist by Kwame Taylor. It includes almost 6,000 songs in the hip-hop genre from the 80s to today. Browse our playlist at anytime by scanning the QR code or just clicking the image below.  
 
 <a href="https://open.spotify.com/playlist/3P6Pr6iEqvK5fl4UkgdQ7T?si=iXXuLU0nQvG7YcHJZvB3Cg">
-   <img src="https://github.com/SpotiScryers/SpotiScry/blob/main/images/Playlist.gif?raw=true" height="300" >
+   <img src="https://github.com/SpotiScryers/SpotiScry/blob/main/images/Playlist_Resized.gif?raw=true" >
    </a>
 
 ### Deliverables
